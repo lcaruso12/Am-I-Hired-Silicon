@@ -40,20 +40,20 @@ $primary-800: #142c34 !default;
 $primary-900: #101d23 !default;
 
 // Brand Colors - Secondary
-$primary-50: #f7f8f8;
-$primary-100: #f3f6ff !default;
-$primary-200: #e0e6e6 !default;
-$primary-300: #b6c3c3 !default;
-$primary-400: #8fa3a3 !default;
-$primary-500: #789091 !default;
-$primary-600: #4e676a !default;
-$primary-700: #314349 !default;
-$primary-800: #142c34 !default;
-$primary-900: #101d23 !default;
+$secondary-50: #F1F7FF;
+$secondary-100: #DBEAFE !default;
+$secondary-200: #BFDBFE !default;
+$secondary-300: #A8BFFF !default;
+$secondary-400: #8EABF9 !default;
+$secondary-500: #8296D9 !default;
+$secondary-600: #6575B3 !default;
+$secondary-700: #49548D !default;
+$secondary-800: #333A66 !default;
+$secondary-900: #262B4B !default;
 
 // Theme colors
 $primary: $primary-500 !default;
-$secondary: #a8bfff !default;
+$secondary: $secondary-500 !default;
 $info: #4c82f7 !default;
 $success: #22c55e !default;
 $warning: #ffba08 !default;
