@@ -280,6 +280,7 @@
                         <div class="container m-0">
 
                             <div class="row mb-3">
+
                                 <div class="col-12 col-xl-7 p-0">
 
                                     <div class="input-group">
@@ -292,7 +293,7 @@
 
                                 </div>
 
-                                <div class="col-12 col-xl-5 xl-3 mt-3 mb-xl-0 mt-xl-0">
+                                <div class="col-12 col-xl-5 mt-3 mb-xl-0 mt-xl-0">
 
                                     <div class="batch-actions">
                                         <button class="btn btn-link">Clear Selection</button>
@@ -300,46 +301,42 @@
                                             data-bs-target="#batch-delete">Delete Selection</button>
                                     </div>
 
-                                    <div>
 
+                                    <!-- Modal -->
 
-                                        <!-- Modal -->
+                                    <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
+                                        <div class="modal-dialog modal-lg" role="document">
 
-                                        <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-lg" role="document">
-
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
-                                                            Opening</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Are you sure you want to delete these <span> <b>x amount
-                                                                positions</b></span>?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-outline-primary"
-                                                            data-bs-dismiss="modal">
-
-                                                            <i class="card-icon" data-feather="x"></i>
-
-                                                            Cancel
-
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-
-                                                            <i class="card-icon" data-feather="trash-2"></i>
-                                                            Delete
-
-                                                        </button>
-                                                    </div>
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
+                                                        Opening</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
                                                 </div>
+                                                <div class="modal-body">
+                                                    Are you sure you want to delete these <span> <b>x amount
+                                                            positions</b></span>?
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-outline-primary"
+                                                        data-bs-dismiss="modal">
 
+                                                        <i class="card-icon" data-feather="x"></i>
+
+                                                        Cancel
+
+                                                    </button>
+                                                    <button type="button" class="btn btn-danger">
+
+                                                        <i class="card-icon" data-feather="trash-2"></i>
+                                                        Delete
+
+                                                    </button>
+                                                </div>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
 
 
