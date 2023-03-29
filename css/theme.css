@@ -23,6 +23,56 @@ CUSTOM CSS
   margin: 0;
 }
 
+.btn .icon {
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.5rem;
+}
+
+.badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.badge .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.batch-actions {
+  display: flex;
+}
+.batch-actions .btn {
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.card.card-users {
+  padding-left: 5rem;
+}
+.card .avatar {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 3.5rem;
+  left: 1.25rem;
+}
+.card .form-check-input {
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+}
 .card .card-header {
   width: 100%;
   display: flex;
@@ -36,9 +86,9 @@ CUSTOM CSS
   align-items: start;
   justify-content: center;
 }
-.card .card-icon {
-  width: 2rem;
-  height: 2rem;
+.card .card-body ul li .card-icon {
+  width: 1rem;
+  height: 1rem;
   flex-shrink: 0;
 }
 .card.card-overview {
@@ -3039,7 +3089,7 @@ textarea.form-control-lg {
 
 .btn-link {
   --si-btn-font-weight: 400;
-  --si-btn-color: var(--si-link-color);
+  --si-btn-color: #181818;
   --si-btn-bg: transparent;
   --si-btn-border-color: transparent;
   --si-btn-hover-color: var(--si-link-hover-color);
@@ -3614,8 +3664,8 @@ textarea.form-control-lg {
 
 .nav-pills {
   --si-nav-pills-border-radius: 50rem;
-  --si-nav-pills-link-active-color: #fff;
-  --si-nav-pills-link-active-bg: #20b670;
+  --si-nav-pills-link-active-color: #115F45;
+  --si-nav-pills-link-active-bg: #87F7B2;
 }
 .nav-pills .nav-link {
   background: none;
