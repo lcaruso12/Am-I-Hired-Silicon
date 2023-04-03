@@ -122,16 +122,9 @@ CUSTOM CSS
 	}
 
 .card{
-	
-	&.card-users{
-		padding-left: 5rem;
-		.avatar{
-			width: 3rem;
-			height: 3rem;
-			position: absolute;
-			top: 3.5rem;
-			left: 1.25rem;
-		}
+		
+	&.card-selected{
+		background:#edfaf4!important;
 	}
 
 	&.card-organization{
@@ -146,5 +139,9 @@ CUSTOM CSS
 	}
 	
 
+}
+
+.pipeline-steps{
+	min-width: 300px !important;
 }
 

@@ -180,7 +180,7 @@
 
                 <nav aria-label="breadcrumb m-0">
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+
                         <li class="breadcrumb-item"><a href="jobs.html">Jobs</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Ssr UX UI Designer</li>
                     </ol>
@@ -323,61 +323,6 @@
                                     Add Candidates
                                 </button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="candidate-modal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Candidate
-                                                </h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-                                            <div class="modal-body">
-
-                                                <form>
-                                                    <div class="mb-3">
-                                                        <label for="exampleInputEmail1" class="form-label">First
-                                                            Name</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label for="exampleInputEmail1" class="form-label">Last
-                                                            Name</label>
-                                                        <input type="text" class="form-control">
-                                                    </div>
-
-                                                    <div class="mb-3">
-                                                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                                                        <input type="email" class="form-control">
-                                                    </div>
-
-
-                                                </form>
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-primary"
-                                                    data-bs-dismiss="modal">
-
-                                                    <i class="card-icon" data-feather="x"></i>
-
-                                                    Cancel
-
-                                                </button>
-                                                <button type="button" class="btn btn-primary">
-
-                                                    <i class="card-icon" data-feather="plus"></i>
-                                                    Add Candidate
-
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                 <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
                                     data-bs-target="#step-modal">
@@ -385,105 +330,19 @@
                                     Add Step
                                 </button>
 
-                                <!-- Modal -->
-                                <div class="modal fade" id="step-modal" tabindex="-1"
-                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h1 class="modal-title fs-5" id="exampleModalLabel">New Step
-                                                </h1>
-                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
-                                            </div>
-
-                                            <div class="modal-body px-1 py-3">
-
-                                                <form>
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-12">
-
-                                                                <div class="mb-3">
-                                                                    <label for="exampleInputEmail1"
-                                                                        class="form-label">Step
-                                                                        Name</label>
-                                                                    <input type="text" class="form-control">
-                                                                </div>
-
-                                                            </div>
-
-                                                        </div>
-
-                                                        <div class="row">
-
-                                                            <div class="col-12 col-md-6">
-
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlTextarea1"
-                                                                        class="form-label">Step Description</label>
-                                                                    <textarea class="form-control"
-                                                                        id="exampleFormControlTextarea1"
-                                                                        rows="3"></textarea>
-                                                                </div>
-
-                                                            </div>
-
-                                                            <div class="col-12 col-md-6">
-
-                                                                <div class="mb-3">
-                                                                    <label for="exampleFormControlTextarea1"
-                                                                        class="form-label">Step Teaser</label>
-                                                                    <textarea class="form-control"
-                                                                        id="exampleFormControlTextarea1"
-                                                                        rows="3"></textarea>
-                                                                </div>
-
-
-                                                            </div>
-
-
-                                                        </div>
-
-                                                    </div>
-
-
-
-                                                </form>
-
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-primary"
-                                                    data-bs-dismiss="modal">
-
-                                                    <i class="card-icon" data-feather="x"></i>
-
-                                                    Cancel
-
-                                                </button>
-                                                <button type="button" class="btn btn-primary">
-
-                                                    <i class="card-icon" data-feather="plus"></i>
-                                                    Add Step
-
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                             </div>
                         </div>
 
                         <div class="card-body d-flex flex-row gap-2 p-0 ">
 
-                            <div class="card shadow-sm border-0 p-3 d-flex flex-column gap-3 disqualified p-3 w-25">
+                            <div
+                                class="pipeline-steps card shadow-sm border-0 p-3 d-flex flex-column gap-3 disqualified p-3">
 
                                 <div
                                     class="card-header d-flex flex-row  align-items-center p-0 m-0 border-0 w-100 gap-2">
 
-                                    <i class="card-icon text-danger" data-feather="trash-2"></i>
+
                                     <h6 class="card-title text-danger m-0">Disqualified</h6>
 
                                 </div>
@@ -494,11 +353,12 @@
 
                             </div>
 
-                            <div class="card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates w-25">
+                            <div
+                                class="pipeline-steps card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates">
 
                                 <div
                                     class="card-header d-flex flex-row  align-items-center p-0 m-0 border-0 w-100 gap-2">
-                                    <i class="card-icon" data-feather="users"></i>
+
                                     <h6 class="card-title m-0">Candidates</h6>
                                 </div>
 
@@ -547,11 +407,12 @@
 
                             </div>
 
-                            <div class="card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates w-25">
+                            <div
+                                class="pipeline-steps card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates">
 
                                 <div
                                     class="card-header d-flex flex-row  align-items-center p-0 m-0 border-0 w-100 gap-2">
-                                    <i class="card-icon text-primary" data-feather="star"></i>
+
                                     <h6 class="card-title text-primary m-0">Hired</h6>
                                 </div>
 
@@ -562,7 +423,8 @@
 
                             </div>
 
-                            <div class="card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates w-25">
+                            <div
+                                class="pipeline-steps card shadow-sm border-0 p-3 d-flex flex-column gap-3 pipeline-candidates">
 
                                 <div
                                     class="card-header d-flex flex-row justify-content-between align-items-center p-0 m-0 border-0 w-100 gap-2">
@@ -602,7 +464,141 @@
             </div>
         </div>
 
-        <!-- Modal -->
+        <!-- Modal Add candidates -->
+        <div class="modal fade" id="candidate-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Add Candidate
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">First
+                                    Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Last
+                                    Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-primary">
+
+                            <i class="card-icon" data-feather="plus"></i>
+                            Add Candidate
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Add Step-->
+        <div class="modal fade" id="step-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">New Step
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body px-1 py-3">
+
+                        <form>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Step
+                                                Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row">
+
+                                    <div class="col-12 col-md-6">
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Step
+                                                Description</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-12 col-md-6">
+
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Step
+                                                Teaser</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-primary">
+
+                            <i class="card-icon" data-feather="plus"></i>
+                            Add Step
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Edit-->
         <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
@@ -653,6 +649,37 @@
 
                             <i class="card-icon" data-feather="save"></i>
                             Save Changes
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal confirmation-->
+        <div class="modal fade" id="confirmation-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Opening</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete <span> <b>Job Position</b></span>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-danger">
+
+                            <i class="card-icon" data-feather="trash-2"></i>
+                            Delete
 
                         </button>
                     </div>

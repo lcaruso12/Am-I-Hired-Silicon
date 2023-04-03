@@ -97,15 +97,8 @@ CUSTOM CSS
   right: 1rem;
 }
 
-.card.card-users {
-  padding-left: 5rem;
-}
-.card.card-users .avatar {
-  width: 3rem;
-  height: 3rem;
-  position: absolute;
-  top: 3.5rem;
-  left: 1.25rem;
+.card.card-selected {
+  background: #edfaf4 !important;
 }
 .card.card-organization .avatar {
   width: 5rem;
@@ -113,6 +106,10 @@ CUSTOM CSS
 }
 .card .card-header {
   min-height: 40px;
+}
+
+.pipeline-steps {
+  min-width: 300px !important;
 }
 
 .text-gradient-primary {

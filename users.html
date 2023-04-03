@@ -294,42 +294,6 @@
                             </div>
 
 
-                            <!-- Modal -->
-
-                            <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
-                                <div class="modal-dialog modal-lg" role="document">
-
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
-                                                Opening</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            Are you sure you want to delete these <span> <b>x amount
-                                                    positions</b></span>?
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-primary"
-                                                data-bs-dismiss="modal">
-
-                                                <i class="card-icon" data-feather="x"></i>
-
-                                                Cancel
-
-                                            </button>
-                                            <button type="button" class="btn btn-danger">
-
-                                                <i class="card-icon" data-feather="trash-2"></i>
-                                                Delete
-
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
 
 
                         </div>
@@ -347,7 +311,9 @@
                                             <div class="d-flex justify-content-start align-items-center gap-2">
                                                 <span
                                                     class="badge bg-faded-primary text-primary rounded-pill d-blos">Admin</span>
-                                                <i class="card-icon text-info" data-feather="star"></i>
+                                                <span
+                                                    class="badge bg-faded-primary text-primary rounded-pill d-blos">Main
+                                                    Contact</span>
 
                                             </div>
 
@@ -359,17 +325,18 @@
 
                                     <div class="card-body p-0">
 
-                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3 fs-sm">
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon" data-feather="mail"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
-                                                    losherovsky@itcrowdarg.com</span>
+
+                                                losherovsky@itcrowdarg.com
                                             </li>
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon " data-feather="phone"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
+                                                <span class="fs-sm">
                                                     +541155653426
-                                                </span></li>
+
+                                            </li>
                                         </ul>
 
                                     </div>
@@ -382,22 +349,24 @@
                                     <div class="dropdown-menu my-1">
 
 
-                                        <a href="#" class="dropdown-item">
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
                                             <i class="card-icon me-1" data-feather="edit-2"></i>
                                             Edit
-                                        </a>
-                                        <a href="#" class="dropdown-item">
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
                                             <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
-                                        </a>
+                                        </button>
 
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
-                                <input class="form-check-input" type="checkbox">
+                            <div class="card card-selected d-flex flex-row p-3 gap-3 border-primary bg-none shadow-sm">
+                                <input class="form-check-input" type="checkbox" checked>
                                 <div class="d-flex flex-column gap-2">
                                     <div class="card-header p-0 border-0 w-100">
 
@@ -415,17 +384,17 @@
 
                                     <div class="card-body p-0">
 
-                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3 fs-sm">
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon" data-feather="mail"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
-                                                    cgallego@itcrowdarg.com</span>
+
+                                                cgallego@itcrowdarg.com
                                             </li>
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon " data-feather="phone"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
-                                                    +541155653426
-                                                </span></li>
+
+                                                +541155653426
+                                            </li>
                                         </ul>
 
                                     </div>
@@ -438,21 +407,23 @@
                                     <div class="dropdown-menu my-1">
 
 
-                                        <a href="#" class="dropdown-item">
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
                                             <i class="card-icon me-1" data-feather="edit-2"></i>
                                             Edit
-                                        </a>
-                                        <a href="#" class="dropdown-item">
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
                                             <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
-                                        </a>
+                                        </button>
 
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                            <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm">
                                 <input class="form-check-input" type="checkbox">
                                 <div class="d-flex flex-column gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -474,17 +445,17 @@
 
                                     <div class="card-body p-0">
 
-                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3 fs-sm">
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon" data-feather="mail"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
-                                                    jdoe@itcrowdarg.com</span>
+
+                                                jdoe@itcrowdarg.com
                                             </li>
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon " data-feather="phone"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
-                                                    +541155653426
-                                                </span></li>
+
+                                                +541155653426
+                                            </li>
                                         </ul>
 
                                     </div>
@@ -497,21 +468,23 @@
                                     <div class="dropdown-menu my-1">
 
 
-                                        <a href="#" class="dropdown-item">
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
                                             <i class="card-icon me-1" data-feather="edit-2"></i>
                                             Edit
-                                        </a>
-                                        <a href="#" class="dropdown-item">
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
                                             <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
-                                        </a>
+                                        </button>
 
 
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                            <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm">
                                 <input class="form-check-input" type="checkbox">
                                 <div class="d-flex flex-column gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -533,17 +506,17 @@
 
                                     <div class="card-body p-0">
 
-                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3 fs-sm">
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon" data-feather="mail"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
-                                                    jdoe@itcrowdarg.com</span>
+
+                                                jdoe@itcrowdarg.com
                                             </li>
                                             <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
                                                 <i class="card-icon " data-feather="phone"></i>
-                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
-                                                    +541155653426
-                                                </span></li>
+
+                                                +541155653426
+                                            </li>
                                         </ul>
 
                                     </div>
@@ -556,14 +529,16 @@
                                     <div class="dropdown-menu my-1">
 
 
-                                        <a href="#" class="dropdown-item">
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
                                             <i class="card-icon me-1" data-feather="edit-2"></i>
                                             Edit
-                                        </a>
-                                        <a href="#" class="dropdown-item">
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
                                             <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
-                                        </a>
+                                        </button>
 
 
                                     </div>
@@ -571,7 +546,7 @@
                             </div>
 
 
-                            <ul class="pagination justify-content-end">
+                            <ul class="pagination justify-content-center">
                                 <li class="page-item">
                                     <a class="page-link" href="#" aria-label="Previous">
                                         <span aria-hidden="true">&laquo;</span>
@@ -603,39 +578,135 @@
                 </div>
             </div>
 
-            <!-- Modal -->
-            <div class="modal fade" id="confirmation-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Opening</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            Are you sure you want to delete <span> <b>User Name</b></span>?
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
-
-                                <i class="card-icon" data-feather="x"></i>
-
-                                Cancel
-
-                            </button>
-                            <button type="button" class="btn btn-danger">
-
-                                <i class="card-icon" data-feather="trash-2"></i>
-                                Delete
-
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
         </div>
 
+        <!-- Edit Modal -->
+        <div class="modal fade" id="edit-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Edit User</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">User First Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">User Last Name</label>
+                                <input type="text" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email</label>
+                                <input type="email" class="form-control">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Phone</label>
+                                <input type="number" class="form-control">
+
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Role</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Recruiter</option>
+                                    <option value="1">Admin</option>
+
+                                </select>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-primary">
+
+                            <i class="card-icon" data-feather="save"></i>
+                            Save Changes
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Confirmation Modal -->
+        <div class="modal fade" id="confirmation-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete Opening</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete <span> <b>User Name</b></span>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-danger">
+
+                            <i class="card-icon" data-feather="trash-2"></i>
+                            Delete
+
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Batch Actions Modal -->
+        <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
+                            Opening</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to delete these <span> <b>x amount
+                                of users</b></span>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+
+                            <i class="card-icon" data-feather="x"></i>
+
+                            Cancel
+
+                        </button>
+                        <button type="button" class="btn btn-danger">
+
+                            <i class="card-icon" data-feather="trash-2"></i>
+                            Delete
+
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
 
 
     </main>
