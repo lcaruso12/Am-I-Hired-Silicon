@@ -74,17 +74,15 @@
                         <li>
                             <a href="#" class="dropdown-item d-flex align-items-center">
                                 <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
-                                Orders
-                                <span class="bg-success rounded-circle mt-n2 ms-1"
-                                    style="width: 5px; height: 5px;"></span>
-                                <span class="ms-auto fs-xs text-muted">2</span>
+                                Profile
+
                             </a>
                         </li>
                         <li>
                             <a href="#" class="dropdown-item d-flex align-items-center">
                                 <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
-                                Sales
-                                <span class="ms-auto fs-xs text-muted">$735.00</span>
+                                Log Out
+
                             </a>
                         </li>
 
@@ -178,173 +176,146 @@
 
     <main class="my-organization">
 
-        <div class="container py-4">
+        <div class="container px-0  py-xl-4">
+
             <div class="row">
 
                 <div class="col-12 col-md-3 col-xl-3 ">
-                    <div class="card shadow-sm border-0">
 
+                    <div class="card p-3 d-flex flex-column gap-3">
+                        <div class="card-body p-0 d-flex flex-column gap 2">
 
+                            <div
+                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <div class="card-body px-3 py-3">
+                                <i class="icon text-primary" data-feather="briefcase"></i>
 
-                            <ul class="list-group list-group-icon mb-3">
-
-                                <li class="list-group-item border-0 p-0 mb-2">
-                                    <h4 class="text-primary mb-1"><b>40</b></h4>
-                                    <p class="card-text">Succesful Hires</p>
-                                </li>
-                                <li class="list-group-item border-0 p-0 mb-2">
-                                    <h4 class="text-primary mb-1"><b>156</b></h4>
-                                    <p class="card-text">Active Candidates</p>
-                                </li>
-                                <li class="list-group-item border-0 p-0 mb-1">
-                                    <h4 class="text-primary mb-2"><b>70</b></h4>
-                                    <p class="card-text">Openings</p>
-                                </li>
-                            </ul>
-
-
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#new-opening">
-                                Edit Organization
-                                <i class="icon" data-feather="edit-2"></i>
-
-                            </button>
-
-                            <!-- Modal -->
-
-                            <div class="modal fade" id="new-opening" tabindex="-1" role="dialog">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">New User
-                                            </h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-
-                                            <form>
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Job
-                                                        Position</label>
-                                                    <input type="text" class="form-control">
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="exampleInputEmail1" class="form-label">Recruiter</label>
-                                                    <select class="form-select" aria-label="Default select example">
-                                                        <option selected>Select Recruiter in Charge of the Opening
-                                                        </option>
-                                                        <option value="1">Create New Recruiter</option>
-                                                        <option value="2">Lucas Osherosvsky</option>
-                                                        <option value="3">Recruiter 2</option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="mb-3">
-                                                    <label for="exampleFormControlTextarea1" class="form-label">Job
-                                                        Description</label>
-                                                    <textarea class="form-control" id="exampleFormControlTextarea1"
-                                                        rows="3"></textarea>
-                                                </div>
-                                            </form>
-
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-primary"
-                                                data-bs-dismiss="modal">
-
-                                                <i class="card-icon" data-feather="x"></i>
-
-                                                Cancel
-
-                                            </button>
-                                            <button type="button" class="btn btn-primary">
-
-                                                <i class="card-icon" data-feather="plus"></i>
-                                                Create Opening
-
-                                            </button>
-                                        </div>
-                                    </div>
+                                <div class="card-body p-0">
+                                    <p class="m-0">27</p>
+                                    <p class="m-0">Jobs</p>
                                 </div>
+
+
+
                             </div>
 
+                            <div
+                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
+
+                                <i class="icon text-primary" data-feather="check-circle"></i>
+
+                                <div class="card-body p-0">
+                                    <p class="m-0">17</p>
+                                    <p class="m-0">Potential Hires</p>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div
+                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
+
+                                <i class="icon text-primary" data-feather="thumbs-up"></i>
+
+                                <div class="card-body p-0">
+                                    <p class="m-0">6</p>
+                                    <p class="m-0">Succesful Hires</p>
+
+                                </div>
+
+
+
+                            </div>
+
+                            <div
+                                class="p-1 border-0  rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
+
+                                <i class="icon text-primary" data-feather="users"></i>
+
+                                <div class="card-body p-0">
+                                    <p class="m-0">125</p>
+                                    <p class="m-0">Candidates</p>
+
+                                </div>
+
+
+
+                            </div>
+
+
                         </div>
+
+                        <button type="button" class="btn btn-primary btn-lg w-100 " data-bs-toggle="modal"
+                            data-bs-target="#new-opening">
+                            Edit Organization
+                            <i class="icon" data-feather="edit-2"></i>
+
+                        </button>
 
                     </div>
                 </div>
 
                 <div class="col-12 col-md-9 col-xl-9">
-                    <div class="card card-organization shadow-sm border-0">
+                    <div class="card shadow-sm border-0 d-flex flex-row justify-content-between p-3 gap-3 h-100">
 
-                        <div class="container">
+                        <div class="w-75 h-100">
+                            <label for="exampleInputEmail1" class="form-label m-0">Description</label>
+                            <p class="card-text"> Lorem
+                                ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, nostrum.
+                                Odio, dolores aliquam, maiores labore nemo ullam dolorum explicabo quae,
+                                libero vitae porro quo voluptatibus odit itaque incidunt reprehenderit.
+                            </p>
+                        </div>
 
-                            <div class="row">
+                        <div class="d-flex flex-column justify-content-start align-items-center gap-3 h-100">
 
-                                <div class="col-12 col-md-12 col-lg-7 p-0">
-                                    <div class="card-body ">
-                                        <div class="description">
-                                            <label for="exampleInputEmail1" class="form-label">Description</label>
-                                            <p class="card-text"> Lorem
-                                                ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, nostrum.
-                                                Odio, dolores aliquam, maiores labore nemo ullam dolorum explicabo quae,
-                                                libero vitae porro quo voluptatibus odit itaque incidunt reprehenderit.
-                                            </p>
-                                        </div>
+                            <div class="d-flex flew-row justify-content-between align-items-center w-100">
 
-                                    </div>
-                                </div>
+                                <label class="form-label m-0">Organization Admin</label>
 
-                                <div class="col-12 col-md-12 col-lg-5 p-0">
-                                    <div class="organization-admin">
-                                        <div class="card-header border-0 m-0 px-3 pt-3 pb-0 align-items-center">
+                                <i class="text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
+                                    title="You can change the organization admin at the user section"
+                                    data-feather="info"></i>
 
-                                            <h5 class="card-title m-0">Organization Admin</h5>
-
-                                            <button class="btn btn-light btn-icon btn-sm" type="button"
-                                                data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">
-                                                <i class="icon m-0" data-feather="info"></i>
-                                            </button>
-
-
-                                        </div>
-
-
-                                        <div class="card-body m-0 px-3 pt-2 pb-3">
-
-                                            <div class="avatar mb-3">
-                                                <h2 class="text-primary mb-0">LO</h2>
-                                            </div>
-
-                                            <h6 class="m-0"> Lucas Osherovsky</h6>
-
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item border-0 p-0 mb-1">
-                                                    <i class="card-icon me-1" data-feather="mail"></i>
-                                                    username@itcrowdarg.com</li>
-                                                <li class="list-group-item p-0 ">
-                                                    <i class="card-icon me-1" data-feather="phone"></i>
-                                                    +541166543356</li>
-                                            </ul>
-                                        </div>
-
-                                    </div>
-                                </div>
                             </div>
 
 
+                            <div class="d-flex flex-column justify-content-center align-items-center gap-2">
+
+                                <div class="avatar">
+                                    <h2 class="text-primary mb-0">LO</h2>
+                                </div>
+
+                                <h6 class="m-0 w-100"> Lucas Osherovsky</h6>
+
+                                <ul class="list-group list-group-flush d-flex flex-column gap-1">
+                                    <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                        <i class="card-icon" data-feather="mail"></i>
+                                        <span class="fs-sm">losherovsky@itcrowdarg.com</span>
+                                    </li>
+                                    <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                        <i class="card-icon " data-feather="phone"></i>
+                                        <span class="fs-sm">+541155653426
+                                        </span></li>
+                                </ul>
+                            </div>
 
                         </div>
 
                     </div>
+
                 </div>
 
-
             </div>
+
+
+
+
+
         </div>
+
 
     </main>
 
@@ -354,14 +325,14 @@
     </script>
 
     <!-- Vendor Scripts -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/rellax/rellax.min.js"></script>
-    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/rellax/rellax.min.js"></script>
+    <script src="vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main Theme Script -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="js/theme.min.js"></script>
 </body>
 
 </html>

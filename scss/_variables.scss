@@ -16,44 +16,44 @@ $prefix: si- !default;
 // Grayscale
 $white: #fff !default;
 $gray-50: #f7f8f8;
-$gray-100: #f3f6ff !default;
-$gray-200: #e0e6e6 !default;
-$gray-300: #b6c3c3 !default;
-$gray-400: #8fa3a3 !default;
+$gray-100: #E0E6E6 !default;
+$gray-200: #CFD8D8 !default;
+$gray-300: #B6C3C3 !default;
+$gray-400: #8FA2A3 !default;
 $gray-500: #789091 !default;
-$gray-600: #4e676a !default;
+$gray-600: #4E676A !default;
 $gray-700: #314349 !default;
 $gray-800: #142c34 !default;
 $gray-900: #101d23 !default;
 $black: #000 !default;
 
 // Brand Colors - Primary
-$primary-50: #f7f8f8;
-$primary-100: #f3f6ff !default;
-$primary-200: #e0e6e6 !default;
-$primary-300: #b6c3c3 !default;
-$primary-400: #8fa3a3 !default;
-$primary-500: #20b670 !default;
-$primary-600: #4e676a !default;
-$primary-700: #314349 !default;
-$primary-800: #142c34 !default;
-$primary-900: #101d23 !default;
+$primary-50: #e2f4ea;
+$primary-100: #bae5cb !default;
+$primary-200: #8cd3aa !default;
+$primary-300: #57c389!default;
+$primary-400: #20b670 !default;
+$primary-500: #00a957 !default;
+$primary-600: #009a4d!default;
+$primary-700: #008841 !default;
+$primary-800: #007736!default;
+$primary-900: #005821!default;
 
 // Brand Colors - Secondary
-$secondary-50: #F1F7FF;
-$secondary-100: #DBEAFE !default;
-$secondary-200: #BFDBFE !default;
-$secondary-300: #A8BFFF !default;
-$secondary-400: #8EABF9 !default;
-$secondary-500: #8296D9 !default;
-$secondary-600: #6575B3 !default;
-$secondary-700: #49548D !default;
-$secondary-800: #333A66 !default;
-$secondary-900: #262B4B !default;
+$secondary-50: #eff2fc;
+$secondary-100: #d5defa !default;
+$secondary-200: #b9c9f9 !default;
+$secondary-300: #9cb2f7 !default;
+$secondary-400: #829cf4 !default;
+$secondary-500: #6b88f2 !default;
+$secondary-600: #647ee5 !default;
+$secondary-700: #5a72d8 !default;
+$secondary-800: #5267cb !default;
+$secondary-900: #4654b5 !default;
 
 // Theme colors
 $primary: $primary-500 !default;
-$secondary: $secondary-500 !default;
+$secondary: $secondary-100 !default;
 $info: #4c82f7 !default;
 $success: #22c55e !default;
 $warning: #ffba08 !default;
@@ -164,6 +164,7 @@ $border-radius-pill: 50rem !default;
 // Border colors map
 $border-colors: (
   'primary': rgba($primary, 0.35),
+  'secondary': rgba($secondary, 0.35),
   'success': rgba($success, 0.35),
   'info': rgba($info, 0.35),
   'warning': rgba($warning, 0.35),
@@ -182,7 +183,7 @@ $box-shadow-inset: inset 0 0 0 transparent !default;
 $box-shadow-base: 0 0.5rem 1.125rem -0.5rem;
 
 $box-shadow-primary: $box-shadow-base rgba($primary, 0.9) !default;
-$box-shadow-secondary: $box-shadow-base rgba($gray-900, 0.15) !default;
+$box-shadow-secondary: $box-shadow-base rgba($secondary-900, 0.15) !default;
 $box-shadow-info: $box-shadow-base rgba($info, 0.9) !default;
 $box-shadow-success: $box-shadow-base rgba($success, 0.9) !default;
 $box-shadow-warning: $box-shadow-base rgba($warning, 0.9) !default;

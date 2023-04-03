@@ -74,17 +74,15 @@
                         <li>
                             <a href="#" class="dropdown-item d-flex align-items-center">
                                 <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
-                                Orders
-                                <span class="bg-success rounded-circle mt-n2 ms-1"
-                                    style="width: 5px; height: 5px;"></span>
-                                <span class="ms-auto fs-xs text-muted">2</span>
+                                Profile
+
                             </a>
                         </li>
                         <li>
                             <a href="#" class="dropdown-item d-flex align-items-center">
                                 <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
-                                Sales
-                                <span class="ms-auto fs-xs text-muted">$735.00</span>
+                                Log Out
+
                             </a>
                         </li>
 
@@ -181,379 +179,427 @@
 
             <div class="row m-0 m-xl-0 gy-3 gx-xl-4">
 
-                <div class="col-12 col-md-3 col-xl-3 id=" mobile">
+                <div class="col-12 col-md-3 col-xl-3" id="mobile">
 
+                    <div class="card  d-flex flex-column gap-3 p-3">
 
-                    <ul class="nav nav-pills justify-content-start flex-column mb-3" role="tablist">
-                        <li class="nav-item mb-1">
-                            <a href="#" class="nav-link active">All</a>
-                        </li>
+                        <div class="list-group rounded-0 border-0" role="tablist">
 
-                        <li class="nav-item mb-1">
-                            <a href="#" class="nav-link">Administrators</a>
-                        </li>
-                        <li class="nav-item mb-1">
-                            <a href="#" class="nav-link">Recruiters</a>
-                        </li>
+                            <a href="#list-home" id="list-home-list"
+                                class="list-group-item list-group-item-action rounded-1 active" data-bs-toggle="list"
+                                role="tab" aria-controls="list-home">
+                                All
+                            </a>
+                            <a href="#list-profile" id="list-profile-list"
+                                class="list-group-item list-group-item-action rounded-1" data-bs-toggle="list"
+                                role="tab" aria-controls="list-profile">
+                                Administrators
+                            </a>
+                            <a href="#list-messages" id="list-messages-list"
+                                class="list-group-item list-group-item-action rounded-1" data-bs-toggle="list"
+                                role="tab" aria-controls="list-messages">
+                                Recruiters
+                            </a>
 
-                    </ul>
-
-                    <div>
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#new-user">
+                        </div>
+                        <button type="button" class="btn btn-primary btn-lg w-100 " data-bs-toggle="modal"
+                            data-bs-target="#new-opening">
                             New User
                             <i class="icon" data-feather="plus"></i>
 
                         </button>
 
-                        <!-- Modal -->
+                    </div>
 
-                        <div class="modal fade" id="new-user" tabindex="-1" role="dialog">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">New User
-                                        </h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
+                    <!-- Modal -->
 
-                                        <form>
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">First
-                                                    Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
+                    <div class="modal fade" id="new-opening" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">New User
+                                    </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
 
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Last
-                                                    Name</label>
-                                                <input type="text" class="form-control">
-                                            </div>
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Job Position</label>
+                                            <input type="text" class="form-control">
+                                        </div>
 
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Email</label>
-                                                <input type="email" class="form-control">
-                                            </div>
+                                        <div class="mb-3">
+                                            <label for="exampleInputEmail1" class="form-label">Recruiter</label>
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option selected>Select Recruiter in Charge of the Opening</option>
+                                                <option value="1">Create New Recruiter</option>
+                                                <option value="2">Lucas Osherosvsky</option>
+                                                <option value="3">Recruiter 2</option>
+                                            </select>
+                                        </div>
 
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Phone
-                                                    Number</label>
-                                                <input type="number" class="form-control">
-                                            </div>
+                                        <div class="mb-3">
+                                            <label for="exampleFormControlTextarea1" class="form-label">Job
+                                                Description</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </form>
 
-                                            <div class="mb-3">
-                                                <label for="exampleInputEmail1" class="form-label">Role</label>
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Select User Role
-                                                    </option>
-                                                    <option value="1">Admin</option>
-                                                    <option value="2">Recruiter</option>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
 
-                                                </select>
-                                            </div>
+                                        <i class="card-icon me-1" data-feather="x"></i>
 
+                                        Cancel
 
-                                        </form>
+                                    </button>
+                                    <button type="button" class="btn btn-primary">
 
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
+                                        <i class="card-icon me-1" data-feather="plus"></i>
+                                        Create User
 
-                                            <i class="card-icon" data-feather="x"></i>
-
-                                            Cancel
-
-                                        </button>
-                                        <button type="button" class="btn btn-primary">
-
-                                            <i class="card-icon" data-feather="plus"></i>
-                                            Create User
-
-                                        </button>
-                                    </div>
+                                    </button>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+
+
 
                 </div>
 
                 <div class="col-12 col-md-9 col-xl-9">
+                    <div class="d-flex flex-column gap-3">
 
-                    <div class="listing-header">
+                        <div class="listing-header d-flex flex-row justify-content-between gap-3">
 
-                        <div class="container m-0">
+                            <div class="input-group">
 
-                            <div class="row mb-3">
-                                <div class="col-12 col-xl-7 p-0">
+                                <input class="form-control" type="text" placeholder="Search User">
 
-                                    <div class="input-group">
-                                        <input class="form-control" type="text" placeholder="Search new-user">
+                                <button class="btn btn-outline-dark btn-icon" type="button">
+                                    <i class="card-icon" data-feather="search"></i>
+                                </button>
+                            </div>
 
-                                        <button class="btn btn-outline-dark " type="button">
-                                            <i class="icon" data-feather="search"></i>
-                                        </button>
+
+                            <div class="batch-actions d-flex flex-row gap-2">
+                                <button class="btn btn-outline-secondary">Clear Selection</button>
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                                    data-bs-target="#batch-delete">Delete Selection</button>
+                            </div>
+
+
+                            <!-- Modal -->
+
+                            <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-lg" role="document">
+
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
+                                                Opening</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Are you sure you want to delete these <span> <b>x amount
+                                                    positions</b></span>?
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-primary"
+                                                data-bs-dismiss="modal">
+
+                                                <i class="card-icon" data-feather="x"></i>
+
+                                                Cancel
+
+                                            </button>
+                                            <button type="button" class="btn btn-danger">
+
+                                                <i class="card-icon" data-feather="trash-2"></i>
+                                                Delete
+
+                                            </button>
+                                        </div>
                                     </div>
 
                                 </div>
+                            </div>
 
-                                <div class="col-12 col-xl-5 xl-3 mt-3 my-xl-0">
 
-                                    <div class="batch-actions">
-                                        <button class="btn btn-link">Clear Selection</button>
-                                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                                            data-bs-target="#batch-delete">Delete Selection</button>
+                        </div>
+
+                        <div class="d-flex flex-column gap-3 pb-5">
+
+
+                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                                <input class="form-check-input" type="checkbox">
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="card-header p-0 border-0 w-100">
+
+                                        <div class="card-title m-0 ">
+                                            <h5 class="m-0">Lucas Osherosvsky</h5>
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <span
+                                                    class="badge bg-faded-primary text-primary rounded-pill d-blos">Admin</span>
+                                                <i class="card-icon text-info" data-feather="star"></i>
+
+                                            </div>
+
+
+                                        </div>
+
+
                                     </div>
 
-                                    <div>
+                                    <div class="card-body p-0">
+
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon" data-feather="mail"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
+                                                    losherovsky@itcrowdarg.com</span>
+                                            </li>
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon " data-feather="phone"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
+                                                    +541155653426
+                                                </span></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
 
 
-                                        <!-- Modal -->
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
+                                        </a>
 
-                                        <div class="modal fade" id="batch-delete" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog modal-lg" role="document">
 
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Delete
-                                                            Opening</h1>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        Are you sure you want to delete these <span> <b>x amount
-                                                                positions</b></span>?
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-outline-primary"
-                                                            data-bs-dismiss="modal">
+                                    </div>
+                                </div>
+                            </div>
 
-                                                            <i class="card-icon" data-feather="x"></i>
+                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                                <input class="form-check-input" type="checkbox">
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="card-header p-0 border-0 w-100">
 
-                                                            Cancel
+                                        <div class="card-title m-0 ">
+                                            <h5 class="m-0">Candela Gallego</h5>
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <span
+                                                    class="badge bg-faded-primary text-primary rounded-pill d-blos">Admin</span>
 
-                                                        </button>
-                                                        <button type="button" class="btn btn-danger">
-
-                                                            <i class="card-icon" data-feather="trash-2"></i>
-                                                            Delete
-
-                                                        </button>
-                                                    </div>
-                                                </div>
 
                                             </div>
                                         </div>
 
                                     </div>
 
+                                    <div class="card-body p-0">
+
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon" data-feather="mail"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
+                                                    cgallego@itcrowdarg.com</span>
+                                            </li>
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon " data-feather="phone"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
+                                                    +541155653426
+                                                </span></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
 
 
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
+                                        </a>
+
+
+                                    </div>
                                 </div>
-
                             </div>
 
+                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                                <input class="form-check-input" type="checkbox">
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="card-header p-0 border-0 w-100">
+
+                                        <div class="card-title m-0 ">
+                                            <h5 class="m-0">John Doe</h5>
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <span
+                                                    class="badge bg-faded-info text-info rounded-pill d-blos">Recruiter</span>
+
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card-body p-0">
+
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon" data-feather="mail"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
+                                                    jdoe@itcrowdarg.com</span>
+                                            </li>
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon " data-feather="phone"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
+                                                    +541155653426
+                                                </span></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card d-flex flex-row p-3 gap-3 border-0 shadow-sm">
+                                <input class="form-check-input" type="checkbox">
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="card-header p-0 border-0 w-100">
+
+                                        <div class="card-title m-0 ">
+                                            <h5 class="m-0">John Doe</h5>
+                                            <div class="d-flex justify-content-start align-items-center gap-2">
+                                                <span
+                                                    class="badge bg-faded-info text-info rounded-pill d-blos">Recruiter</span>
+
+
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="card-body p-0">
+
+                                        <ul class="list-group list-group-flush d-flex flex-row gap-3">
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon" data-feather="mail"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Mail:</span>
+                                                    jdoe@itcrowdarg.com</span>
+                                            </li>
+                                            <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
+                                                <i class="card-icon " data-feather="phone"></i>
+                                                <span class="fs-sm"> <span class="fw-bold">Phone:</span>
+                                                    +541155653426
+                                                </span></li>
+                                        </ul>
+
+                                    </div>
+
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+                                        <a href="#" class="dropdown-item">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
+                                        </a>
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="mobile bg-white p-2 border-top shadow-sm">
+
+                            <div class="batch-actions">
+                                <button class="btn btn-link">Clear Selection</button>
+                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                                    data-bs-target="#batch-delete">Delete Selection</button>
+                            </div>
 
                         </div>
 
                     </div>
-
-                    <div class="listing-body pb-5">
-
-                        <div class="card mb-3 border-0 card-users">
-                            <div class="avatar">
-                                <p>LO</p>
-                            </div>
-                            <input class="form-check-input mt-0" type="checkbox" value=""
-                                aria-label="Checkbox for following text input">
-
-                            <div class="card-header border-0 m-0 px-3 ps-0 py-3 pb-0">
-
-                                <div class="card-title m-0 py-1">
-                                    <h5 class="m-0">Lucas Osherovsky</h5>
-                                    <div class="user-info">
-
-                                        <span class="badge rounded-pill bg-faded-primary text-primary">
-                                            Admin
-                                        </span>
-                                        <span class="badge rounded-pill bg-faded-warning">
-                                            <i class="icon text-warning" data-feather="star"></i>
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-light btn-icon btn-sm" type="button">
-                                    <i class="" data-feather="more-vertical"></i>
-                                </button>
-
-                            </div>
-                            <div class="card-body px-3 ps-0 py-3 pt-1">
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 p-0 mb-1">
-                                        <i class="card-icon me-1" data-feather="mail"></i>
-                                        losherovsky@itcrowdarg.com</li>
-                                    <li class="list-group-item p-0 ">
-                                        <i class="card-icon me-1" data-feather="phone"></i>
-                                        +541166543356</li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-3 border-primary card-users">
-
-                            <div class="avatar">
-                                <p>CG</p>
-                            </div>
-
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-
-                            <div class="card-header border-0 m-0 px-3 ps-0 py-3 pb-0">
-
-                                <div class="card-title m-0 py-1">
-                                    <h5 class="m-0">Candela Gallego</h5>
-                                    <div class="user-info d-flex">
-
-                                        <span class="badge rounded-pill bg-faded-primary text-primary me-1">
-                                            Admin
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-light btn-icon btn-sm" type="button">
-                                    <i class="" data-feather="more-vertical"></i>
-                                </button>
-
-                            </div>
-                            <div class="card-body px-3 ps-0 py-3 pt-1">
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 p-0 mb-1">
-                                        <i class="card-icon me-1" data-feather="mail"></i>
-                                        username@itcrowdarg.com</li>
-                                    <li class="list-group-item p-0 ">
-                                        <i class="card-icon me-1" data-feather="phone"></i>
-                                        +541166543356</li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-3 border-primary card-users">
-
-                            <div class="avatar">
-                                <p>UN</p>
-                            </div>
-
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-
-                            <div class="card-header border-0 m-0 px-3 ps-0 py-3 pb-0">
-
-                                <div class="card-title m-0 py-1">
-                                    <h5 class="m-0">User Name</h5>
-                                    <div class="user-info d-flex">
-
-                                        <span class="badge rounded-pill bg-faded-info text-info me-1">
-                                            Recruiter
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-light btn-icon btn-sm" type="button">
-                                    <i class="" data-feather="more-vertical"></i>
-                                </button>
-
-                            </div>
-                            <div class="card-body px-3 ps-0 py-3 pt-1">
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 p-0 mb-1">
-                                        <i class="card-icon me-1" data-feather="mail"></i>
-                                        username@itcrowdarg.com</li>
-                                    <li class="list-group-item p-0 ">
-                                        <i class="card-icon me-1" data-feather="phone"></i>
-                                        +541166543356</li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <div class="card mb-3 border-0 card-users">
-                            <div class="avatar">
-                                <p>UN</p>
-                            </div>
-                            <input class="form-check-input mt-0" type="checkbox" value=""
-                                aria-label="Checkbox for following text input">
-
-                            <div class="card-header border-0 m-0 px-3 ps-0 py-3 pb-0">
-
-                                <div class="card-title m-0 py-1">
-                                    <h5 class="m-0">User Name</h5>
-                                    <div class="user-info d-flex">
-
-                                        <span class="badge rounded-pill bg-faded-info text-info me-1">
-                                            Recruiter
-                                        </span>
-
-
-                                    </div>
-                                </div>
-
-                                <button class="btn btn-light btn-icon btn-sm" type="button">
-                                    <i class="" data-feather="more-vertical"></i>
-                                </button>
-
-                            </div>
-                            <div class="card-body px-3 ps-0 py-3 pt-1">
-
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item border-0 p-0 mb-1">
-                                        <i class="card-icon me-1" data-feather="mail"></i>
-                                        username@itcrowdarg.com</li>
-                                    <li class="list-group-item p-0 ">
-                                        <i class="card-icon me-1" data-feather="phone"></i>
-                                        +541166543356</li>
-                                </ul>
-
-                            </div>
-                        </div>
-
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-
-
-
-                    </div>
-
-                    <div class="mobile bg-white p-2 border-top shadow-sm">
-
-                        <div class="batch-actions">
-                            <button class="btn btn-link">Clear Selection</button>
-                            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                                data-bs-target="#batch-delete">Delete Selection</button>
-                        </div>
-
-                    </div>
-
                 </div>
             </div>
 
@@ -600,14 +646,14 @@
     </script>
 
     <!-- Vendor Scripts -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="assets/vendor/rellax/rellax.min.js"></script>
-    <script src="assets/vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="vendor/rellax/rellax.min.js"></script>
+    <script src="vendor/@lottiefiles/lottie-player/dist/lottie-player.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
     <!-- Main Theme Script -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="js/theme.min.js"></script>
 </body>
 
 </html>
