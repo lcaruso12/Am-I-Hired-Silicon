@@ -150,9 +150,16 @@ CUSTOM CSS
 
 .pipeline-steps{
 	min-width: 300px !important;
+	.card-body{
+
+		max-height: 700px;
+
+	}
 }
 
 .chat-list{
 	max-height: 600px;
 }
+
+
 
