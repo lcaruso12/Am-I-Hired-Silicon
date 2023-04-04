@@ -15,6 +15,10 @@ $btn-link-color: $secondary ;
 $input-focus-border-color: $primary-100;
 $input-focus-box-shadow: $box-shadow-base $gray-300;
 
+
+$pagination-hover-bg: rgba($secondary, 0.2);
+
+
 $list-group-hover-bg: rgba($primary, 0.05);
 $list-group-action-active-color: $primary;
 $list-group-action-active-bg:rgba($primary, 0.12);
@@ -25,12 +29,14 @@ $list-group-active-box-shadow: none;
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
+
 .my-organization{
 	.avatar{
 		width: 4rem;
 		height: 4rem;
 	}
 }
+
 .dot {
   height: .5rem;
   width: .5rem;
@@ -45,6 +51,7 @@ CUSTOM CSS
 		height: 4rem;
 	}
 }
+
 .avatar {
 	width: 2rem;
 	height: 2rem;
@@ -119,7 +126,7 @@ CUSTOM CSS
 		position: absolute;
 		top: 1rem;
 		right: 1rem;
-	}
+}
 
 .card{
 		
@@ -143,5 +150,9 @@ CUSTOM CSS
 
 .pipeline-steps{
 	min-width: 300px !important;
+}
+
+.chat-list{
+	max-height: 600px;
 }
 

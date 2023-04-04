@@ -76,6 +76,7 @@ $theme-colors: (
 // Faded colors map
 $theme-faded-colors: (
   'primary': rgba($primary, 0.12),
+  'secondary': rgba($secondary, 0.30),
   'success': rgba($success, 0.12),
   'info': rgba($info, 0.12),
   'warning': rgba($warning, 0.12),
@@ -164,7 +165,7 @@ $border-radius-pill: 50rem !default;
 // Border colors map
 $border-colors: (
   'primary': rgba($primary, 0.35),
-  'secondary': rgba($secondary, 0.35),
+  'secondary': $secondary-100, 
   'success': rgba($success, 0.35),
   'info': rgba($info, 0.35),
   'warning': rgba($warning, 0.35),
