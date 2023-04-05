@@ -30,12 +30,7 @@ $list-group-active-box-shadow: none;
 CUSTOM CSS
 =================================================================================================*/
 
-.my-organization{
-	.avatar{
-		width: 4rem;
-		height: 4rem;
-	}
-}
+
 
 .dot {
   height: .5rem;
@@ -45,7 +40,7 @@ CUSTOM CSS
   display: inline-block;
 }
 
-.job-description{
+.job-description, .my-organization, .messages{
 	.avatar{
 		width: 4rem;
 		height: 4rem;
