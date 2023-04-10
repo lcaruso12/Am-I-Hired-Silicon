@@ -211,7 +211,6 @@
   transition: none 0s ease 0s !important;
 }
 .lg-css3.lg-use-css3 .lg-item {
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 .lg-css3.lg-fade .lg-item {

@@ -63,9 +63,12 @@ CUSTOM CSS
 }
 
 .listing-header{
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
 	.input-group{
 		min-width: 340px;
-		max-width: 500px;
+		max-width: 600px;
 		input{
 			max-height: 44px;
 		}
@@ -157,4 +160,16 @@ CUSTOM CSS
 }
 
 
+@media (max-width:992px){
+	.listing-header{
+		flex-direction: column !important;
+	}
+	
 
+}
+
+@media (max-width:767px){
+	.navigation{
+		display: none;
+	}
+}
