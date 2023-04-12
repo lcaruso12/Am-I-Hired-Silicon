@@ -41,7 +41,7 @@ CUSTOM CSS
   gap: 1rem;
 }
 .listing-header .input-group {
-  min-width: 340px;
+  min-width: 300px;
   max-width: 600px;
 }
 .listing-header .input-group input {
@@ -70,9 +70,6 @@ CUSTOM CSS
   display: flex;
 }
 
-.batch-actions {
-  display: flex;
-}
 .batch-actions .btn {
   width: 100%;
 }
@@ -84,7 +81,7 @@ CUSTOM CSS
 }
 
 .mobile {
-  display: none;
+  visibility: hidden;
   width: 100%;
   position: fixed;
   left: 0;
@@ -119,6 +116,9 @@ CUSTOM CSS
   max-height: 600px;
 }
 
+/*=================================================================================================
+MEDIA QUERIES 
+=================================================================================================*/
 @media (max-width: 992px) {
   .listing-header {
     flex-direction: column !important;
@@ -127,6 +127,18 @@ CUSTOM CSS
 @media (max-width: 767px) {
   .navigation {
     display: none;
+  }
+  .listing-header {
+    gap: 0;
+  }
+  .listing-header .batch-actions {
+    visibility: hidden;
+  }
+  .listing-header .batch-actions .btn {
+    display: none;
+  }
+  .mobile {
+    visibility: visible;
   }
 }
 .text-gradient-primary {
