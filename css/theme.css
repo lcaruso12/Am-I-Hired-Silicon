@@ -116,6 +116,17 @@ CUSTOM CSS
   max-height: 600px;
 }
 
+.offcanvas .navbar-nav .nav-item .nav-link {
+  padding: 0.5rem;
+  min-width: 300px;
+}
+.offcanvas .navbar-nav .nav-item .nav-link.active {
+  padding: 0.5rem;
+  background: rgba(32, 182, 112, 0.12);
+  border-radius: 0.5rem;
+  color: #20b670;
+}
+
 /*=================================================================================================
 MEDIA QUERIES 
 =================================================================================================*/

@@ -160,6 +160,25 @@ CUSTOM CSS
 	max-height: 600px;
 }
 
+.offcanvas{
+	.navbar-nav{
+		.nav-item{
+			
+			.nav-link{
+				padding: 0.5rem;
+				min-width: 300px;
+				&.active{
+					padding: 0.5rem;
+					background: rgba($primary, 0.12);
+					border-radius: .5rem;
+					color: $primary;
+				}
+			}
+		}
+
+	}
+}
+
 /*=================================================================================================
 MEDIA QUERIES 
 =================================================================================================*/
