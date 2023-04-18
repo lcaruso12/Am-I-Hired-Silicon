@@ -12,11 +12,28 @@ $nav-pills-link-active-color: #115F45;
 $nav-pills-link-active-bg: #87F7B2;
 $btn-link-color: $secondary ;
 
-$input-focus-border-color: $primary-100;
+$input-focus-border-color: $primary-50;
 $input-focus-box-shadow: $box-shadow-base $gray-300;
 
+$list-group-color: $gray-600;
 
-$pagination-hover-bg: rgba($secondary, 0.2);
+$pagination-bg: transparent;
+$pagination-color: $gray-600;
+
+$pagination-hover-color: $black;
+
+$pagination-focus-color: $black ;
+
+$pagination-active-color: $black ;
+$pagination-active-bg: $gray-200;
+
+
+
+
+
+
+
+
 
 
 $list-group-hover-bg: rgba($primary, 0.05);
@@ -25,11 +42,23 @@ $list-group-action-active-bg:rgba($primary, 0.12);
 $list-group-border-color: none;
 $list-group-active-box-shadow: none;
 
+$dropdown-link-hover-bg: $secondary-50;
+
 
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
 
+
+.navbar-nav{
+	.nav-item{
+		.nav-link{
+			&.active{
+				box-shadow: inset 0 -3px 0 $primary;
+			}
+		}
+	}
+}
 
 
 .dot {
@@ -76,13 +105,6 @@ CUSTOM CSS
 	
 }
 
-.btn{
-	.icon{
-		width: 1rem;
-		height: 1rem;
-		margin-left: .5rem;
-	}
-}
 
 .badge-icon{
 	width: .75rem;
@@ -96,9 +118,6 @@ CUSTOM CSS
 	color: $primary;
 }
 
-.nav-item{
-	display: flex;
-}
 
 .batch-actions{
 	
@@ -113,6 +132,8 @@ CUSTOM CSS
 	flex-shrink: 0;
 }
 
+
+
 .mobile{
 	visibility:hidden;
 	width: 100%;
@@ -121,16 +142,37 @@ CUSTOM CSS
 	bottom: 0;
 }
 
-.btn-menu{
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
+.btn{
+	&.btn-menu{
+			position: absolute;
+			top: 1rem;
+			right: 1rem;
+			i{
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+	}
+	.button-icon{
+		width: 1.25rem;
+		height: 1.25rem;
+	}
+}
+
+#action-required{
+.btn{
+	&.btn-menu{
+			position: absolute;
+			top: 1rem;
+			right: 0rem;
+			
+	}
+}
 }
 
 .card{
 		
 	&.card-selected{
-		background:#edfaf4!important;
+		background:$primary-50;
 	}
 
 	&.card-organization{
@@ -172,6 +214,7 @@ CUSTOM CSS
 					background: rgba($primary, 0.12);
 					border-radius: .5rem;
 					color: $primary;
+					box-shadow: none;
 				}
 			}
 		}

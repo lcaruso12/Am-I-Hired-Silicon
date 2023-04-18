@@ -28,32 +28,33 @@ $gray-900: #101d23 !default;
 $black: #000 !default;
 
 // Brand Colors - Primary
-$primary-50: #e2f4ea;
-$primary-100: #bae5cb !default;
-$primary-200: #8cd3aa !default;
-$primary-300: #57c389!default;
-$primary-400: #20b670 !default;
-$primary-500: #00a957 !default;
-$primary-600: #009a4d!default;
-$primary-700: #008841 !default;
-$primary-800: #007736!default;
-$primary-900: #005821!default;
+$primary-50: #eff2fc;
+$primary-100: #d5defa !default;
+$primary-200: #b9c9f9 !default;
+$primary-300: #9cb2f7 !default;
+$primary-400: #829cf4 !default;
+$primary-500: #6b88f2 !default;
+$primary-600: #647ee5 !default;
+$primary-700: #5a72d8 !default;
+$primary-800: #5267cb !default;
+$primary-900: #4654b5 !default;
 
 // Brand Colors - Secondary
-$secondary-50: #eff2fc;
-$secondary-100: #d5defa !default;
-$secondary-200: #b9c9f9 !default;
-$secondary-300: #9cb2f7 !default;
-$secondary-400: #829cf4 !default;
-$secondary-500: #6b88f2 !default;
-$secondary-600: #647ee5 !default;
-$secondary-700: #5a72d8 !default;
-$secondary-800: #5267cb !default;
-$secondary-900: #4654b5 !default;
+$secondary-50: #f3f6ff;
+$secondary-100: #dee8ff !default;
+$secondary-200: #c9d9ff!default;
+$secondary-300: #b1c8ff!default;
+$secondary-400: #9ab6ff !default;
+$secondary-500: #88a4ff !default;
+$secondary-600: #7f99ff!default;
+$secondary-700: #748cf4 !default;
+$secondary-800: #6d81e8!default;
+$secondary-900: #606dd1!default;
+
 
 // Theme colors
-$primary: $primary-400 !default;
-$secondary: $secondary-100 !default;
+$primary: $primary-500 !default;
+$secondary: $secondary-50 !default;
 $info: #4c82f7 !default;
 $success: #22c55e !default;
 $warning: #ffba08 !default;
@@ -437,7 +438,7 @@ $input-padding-x-lg: 1.125rem !default;
 $input-color: $body-color !default;
 $input-bg: $white !default;
 $input-disabled-bg: $gray-100 !default;
-$input-border-color: $gray-400 !default;
+$input-border-color: $gray-200 !default;
 
 $input-focus-border-color: map-get($border-colors, 'primary') !default;
 $input-focus-box-shadow: $box-shadow-base rgba($primary, 0.2) !default;
