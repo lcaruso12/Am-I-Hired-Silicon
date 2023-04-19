@@ -55,10 +55,6 @@ CUSTOM CSS
   color: #6b88f2;
 }
 
-.batch-actions .btn {
-  width: 100%;
-}
-
 .card-icon {
   width: 1rem;
   height: 1rem;
@@ -135,26 +131,9 @@ CUSTOM CSS
 /*=================================================================================================
 MEDIA QUERIES 
 =================================================================================================*/
-@media (max-width: 992px) {
-  .listing-header {
-    flex-direction: column !important;
-  }
-}
 @media (max-width: 767px) {
   .navigation {
     display: none;
-  }
-  .listing-header {
-    gap: 0;
-  }
-  .listing-header .batch-actions {
-    visibility: hidden;
-  }
-  .listing-header .batch-actions .btn {
-    display: none;
-  }
-  .mobile {
-    visibility: visible;
   }
 }
 .text-gradient-primary {
