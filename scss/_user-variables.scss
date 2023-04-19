@@ -12,37 +12,31 @@ $nav-pills-link-active-color: #115F45;
 $nav-pills-link-active-bg: #87F7B2;
 $btn-link-color: $secondary ;
 
+/*Inputs*/
 $input-focus-border-color: $primary-50;
 $input-focus-box-shadow: $box-shadow-base $gray-300;
 
-$list-group-color: $gray-600;
-
+/*Pagination*/
 $pagination-bg: transparent;
 $pagination-color: $gray-600;
+$pagination-hover-color: $primary;
+$pagination-hover-bg: $primary-100;
+$pagination-focus-color: $primary ;
+$pagination-active-color: $primary ;
+$pagination-active-bg: $primary-100;
 
-$pagination-hover-color: $black;
+/*List Items*/
+$list-group-color: $gray-600;
 
-$pagination-focus-color: $black ;
-
-$pagination-active-color: $black ;
-$pagination-active-bg: $gray-200;
-
-
-
-
-
-
-
-
-
-
+$list-group-action-color: $gray-600;
 $list-group-hover-bg: rgba($primary, 0.05);
 $list-group-action-active-color: $primary;
 $list-group-action-active-bg:rgba($primary, 0.12);
 $list-group-border-color: none;
 $list-group-active-box-shadow: none;
 
-$dropdown-link-hover-bg: $secondary-50;
+/*Dropdown Items*/
+$dropdown-link-hover-bg: $primary-50;
 
 
 /*=================================================================================================
@@ -91,19 +85,7 @@ CUSTOM CSS
 	}
 }
 
-.listing-header{
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
-	.input-group{
-		min-width: 300px;
-		max-width: 600px;
-		input{
-			max-height: 44px;
-		}
-	}
-	
-}
+
 
 
 .badge-icon{
@@ -143,19 +125,26 @@ CUSTOM CSS
 }
 
 .btn{
+	svg{
+		width: 1.5em;
+		height: 1.5em;
+		
+	}
 	&.btn-menu{
 			position: absolute;
 			top: 1rem;
 			right: 1rem;
-			i{
+			border-radius: 100%;
+			&:hover{
+				background: rgba($gray-800, 0.15);
+			}
+			/*i{
 				width: 1.5rem;
 				height: 1.5rem;
 			}
+			*/
 	}
-	.button-icon{
-		width: 1.25rem;
-		height: 1.25rem;
-	}
+	
 }
 
 #action-required{

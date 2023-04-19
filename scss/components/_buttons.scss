@@ -9,13 +9,27 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
+  flex-direction: row;
+  gap:.5rem;
   &:not([class^='btn-outline-']):not([class*=' btn-outline-']):not(.btn-secondary):not(.btn-light):not(.btn-link) {
     --#{$prefix}btn-color: #{$btn-color};
   }
 
   &:hover,
   &:disabled, &.disabled { box-shadow: none !important; }
+
+  &.btn-sm {
+    height:1.5rem;
+  }
+
+  &.btn-lg {
+    height: 3.5rem;
+  }
+
+  &.btn-xl {
+    height: 4rem;
+  }
+  
 }
 
 
@@ -90,7 +104,7 @@
 // Icon button
 
 .btn-icon {
-  --#{$prefix}btn-size: #{$btn-icon-size};
+  --#{$prefix}btn-size: 2.5rem;
   --#{$prefix}btn-icon-size: #{$font-size-base * 1.25};
 
   flex-shrink: 0;
@@ -98,22 +112,23 @@
   height: var(--#{$prefix}btn-size);
   padding: 0;
 
+  /*
   > i {
     font-size: var(--#{$prefix}btn-icon-size);
   }
-
+*/
   &.btn-sm {
-    --#{$prefix}btn-size: #{$btn-icon-sm-size};
+    --#{$prefix}btn-size:1.5rem;
     --#{$prefix}btn-icon-size: #{$font-size-base * 1.125};
   }
 
   &.btn-lg {
-    --#{$prefix}btn-size: #{$btn-icon-lg-size};
+    --#{$prefix}btn-size: 3.5rem;
     --#{$prefix}btn-icon-size: #{$font-size-base * 1.4375};
   }
 
   &.btn-xl {
-    --#{$prefix}btn-size: #{$btn-icon-xl-size};
+    --#{$prefix}btn-size: 4rem;
     --#{$prefix}btn-icon-size: #{$font-size-base * 1.75};
   }
 }

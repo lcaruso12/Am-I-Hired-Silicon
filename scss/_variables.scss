@@ -39,26 +39,15 @@ $primary-700: #5a72d8 !default;
 $primary-800: #5267cb !default;
 $primary-900: #4654b5 !default;
 
-// Brand Colors - Secondary
-$secondary-50: #f3f6ff;
-$secondary-100: #dee8ff !default;
-$secondary-200: #c9d9ff!default;
-$secondary-300: #b1c8ff!default;
-$secondary-400: #9ab6ff !default;
-$secondary-500: #88a4ff !default;
-$secondary-600: #7f99ff!default;
-$secondary-700: #748cf4 !default;
-$secondary-800: #6d81e8!default;
-$secondary-900: #606dd1!default;
 
 
 // Theme colors
 $primary: $primary-500 !default;
-$secondary: $secondary-50 !default;
+$secondary: $primary-200 !default;
 $info: #4c82f7 !default;
 $success: #22c55e !default;
 $warning: #ffba08 !default;
-$danger: #ef4444 !default;
+$danger: #f02944 !default;
 $light: $white !default;
 $dark: $gray-900 !default;
 
@@ -166,7 +155,7 @@ $border-radius-pill: 50rem !default;
 // Border colors map
 $border-colors: (
   'primary': rgba($primary, 0.35),
-  'secondary': $secondary-100, 
+  'secondary': $gray-200, 
   'success': rgba($success, 0.35),
   'info': rgba($info, 0.35),
   'warning': rgba($warning, 0.35),
@@ -185,7 +174,7 @@ $box-shadow-inset: inset 0 0 0 transparent !default;
 $box-shadow-base: 0 0.5rem 1.125rem -0.5rem;
 
 $box-shadow-primary: $box-shadow-base rgba($primary, 0.9) !default;
-$box-shadow-secondary: $box-shadow-base rgba($secondary-900, 0.15) !default;
+$box-shadow-secondary: $box-shadow-base rgba($gray-800, 0.15) !default;
 $box-shadow-info: $box-shadow-base rgba($info, 0.9) !default;
 $box-shadow-success: $box-shadow-base rgba($success, 0.9) !default;
 $box-shadow-warning: $box-shadow-base rgba($warning, 0.9) !default;
@@ -213,9 +202,9 @@ $font-weight-medium: 600 !default;
 $font-weight-semibold: 700 !default;
 $font-weight-bold: 800 !default;
 
-$line-height-base: 1.6 !default;
-$line-height-sm: 1.4 !default;
-$line-height-lg: 1.8 !default;
+$line-height-base: 1.4 !default;
+$line-height-sm: 1.2 !default;
+$line-height-lg: 1.5 !default;
 
 $h1-font-size: $font-size-base * 2.5 !default;
 $h2-font-size: $font-size-base * 2 !default;
@@ -304,16 +293,16 @@ $table-variants: (
 
 // Buttons + Forms
 
-$input-btn-padding-y: 0.625rem !default;
+$input-btn-padding-y: 0.75rem !default;
 $input-btn-padding-x: 1.75rem !default;
 $input-btn-font-size: $font-size-sm !default;
 $input-btn-focus-width: 0 !default;
 
-$input-btn-padding-y-sm: 0.475rem !default;
+$input-btn-padding-y-sm: 0.5rem !default;
 $input-btn-padding-x-sm: 1.25rem !default;
 $input-btn-font-size-sm: $font-size-xs !default;
 
-$input-btn-padding-y-lg: 0.785rem !default;
+$input-btn-padding-y-lg: 0.75rem !default;
 $input-btn-padding-x-lg: 2rem !default;
 $input-btn-font-size-lg: $font-size-base !default;
 
@@ -336,7 +325,7 @@ $btn-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, bord
 // Icon buttons
 
 $btn-icon-size: 2.75rem !default;
-$btn-icon-sm-size: 2.25rem !default;
+$btn-icon-sm-size: 2rem !default;
 $btn-icon-lg-size: 3.25rem !default;
 $btn-icon-xl-size: 4.5rem !default;
 
@@ -644,7 +633,7 @@ $dropdown-box-shadow: $box-shadow !default;
 $dropdown-border-radius: $border-radius-lg !default;
 $dropdown-spacer: 0.25rem !default;
 
-$dropdown-item-padding-y: 0.375rem !default;
+$dropdown-item-padding-y: 0.75rem !default;
 $dropdown-item-padding-x: 1rem !default;
 $dropdown-item-font-size: $font-size-sm !default;
 $dropdown-item-icon-size: $font-size-base !default;
