@@ -23,7 +23,7 @@ CUSTOM CSS
   display: inline-block;
 }
 
-.job-description .avatar, .my-organization .avatar, .messages .avatar {
+.job-description .avatar, .my-organization .avatar {
   width: 4rem;
   height: 4rem;
 }
@@ -112,8 +112,10 @@ CUSTOM CSS
   max-height: 700px;
 }
 
-.chat-list {
-  max-height: 600px;
+.chat-list-item:hover {
+  transform: scale(1.0125);
+  background-color: #eff2fc;
+  transition: transform 0.2s;
 }
 
 .offcanvas .navbar-nav .nav-item .nav-link {
