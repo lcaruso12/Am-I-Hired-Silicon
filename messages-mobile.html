@@ -39,8 +39,7 @@
 
             <div class="d-flex justify-content-between align-items-center py-1">
                 <!-- Responsive nav-->
-                <div class="mobile-nav-toggler d-md-none d-flex justify-content-center align-items-center"
-                    style="min-width: 2.5rem;">
+                <div class="mobile-nav-toggler">
                     <nav class="row navbar navbar-expand-lg align-items-center p-0">
 
                         <button class="btn btn-light btn-icon " type="button" data-bs-toggle="offcanvas"
@@ -52,7 +51,7 @@
                 </div>
 
                 <a href="index.html">
-                    <img src="img/itc-logo.svg" alt="IT Crowd" style="height: 1rem;">
+                    <img class="logo" src="img/itc-logo.svg" alt="IT Crowd">
                 </a>
 
                 <div class="nav dropdown d-block order-lg-3">
@@ -64,8 +63,8 @@
                         </div>
 
                         <div class="d-none d-sm-block ps-2">
-                            <div class="fs-xs lh-1 opacity-60">Hello,</div>
-                            <div class="fs-sm dropdown toggle">Lucas
+
+                            <div class="fs-sm dropdown toggle">Lucas O.
 
                                 <i class="card-icon" data-feather="chevron-down"></i>
                             </div>
@@ -131,7 +130,7 @@
 
         <div class="navigation border-top">
             <div class="container">
-                <nav class="row navbar navbar-expand-lg align-items-center ">
+                <nav class="row navbar navbar-expand-lg align-items-center p-0 ">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i data-feather="menu"></i> </span>
@@ -168,9 +167,11 @@
 
     <main class="messages">
 
-        <div class="d-flex flex-column p-0 gap-0 border-end">
 
-            <div class=" card-header p-3 border-0 m-0 d-flex flex-column gap-1 border-bottom w-100">
+
+        <div class="d-flex flex-column p-0">
+
+            <div class="chat-list-header">
 
 
                 <select class="form-select form-select-sm " aria-label="Default select example">
@@ -190,18 +191,24 @@
 
             </div>
 
-            <div class="chat-list card-body p-0 m-0 d-flex flex-column">
+            <div class="chat-list-body">
 
 
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
+                <a href="chat-mobile.html" class="chat-list-item text-decoration-none">
 
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
+                    <div class="avatar">
+                        <p>JD</p>
+                    </div>
+                    <div class="chat-list-item-body">
+
+                        <div>
+                            <h6 class="text-truncate">John Doe
+                            </h6>
+                            <p class="card-text fs-xs fw-semibold text-success">00:00pm</p>
+
                         </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
+
+                        <div>
 
                             <p class="text-muted fs-sm m-0 text-truncate">
                                 Lorem,
@@ -209,27 +216,32 @@
                                 dolor sit
                                 amet
                                 consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
+                                adipisicing elit. Ullam ipsam quas doloribus commodi
+                            </p>
 
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
+                            <span class="badge rounded-pill bg-success">14</span>
 
 
 
                         </div>
-                    </a>
 
+                    </div>
+                </a>
 
-                </div>
+                <a href="chat-mobile.html" class="chat-list-item text-decoration-none">
+                    <div class="avatar">
+                        <p>JD</p>
+                    </div>
+                    <div class="chat-list-item-body">
 
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
+                        <div>
+                            <h6 class="text-truncate">John Doe
+                            </h6>
+                            <p class="card-text fs-xs text-muted">00:00pm</p>
 
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
                         </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
+
+                        <div>
 
                             <p class="text-muted fs-sm m-0 text-truncate">
                                 Lorem,
@@ -237,27 +249,28 @@
                                 dolor sit
                                 amet
                                 consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
+                                adipisicing elit. Ullam ipsam quas doloribus commodi
+                            </p>
 
                         </div>
-                    </a>
 
+                    </div>
+                </a>
 
-                </div>
+                <a href="chat-mobile.html" class="chat-list-item text-decoration-none">
+                    <div class="avatar">
+                        <p>JD</p>
+                    </div>
+                    <div class="chat-list-item-body">
 
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
+                        <div>
+                            <h6 class="text-truncate">John Doe
+                            </h6>
+                            <p class="card-text fs-xs text-muted">00:00pm</p>
 
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
                         </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
+
+                        <div>
 
                             <p class="text-muted fs-sm m-0 text-truncate">
                                 Lorem,
@@ -265,161 +278,19 @@
                                 dolor sit
                                 amet
                                 consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
+                                adipisicing elit. Ullam ipsam quas doloribus commodi
+                            </p>
 
                         </div>
-                    </a>
 
-
-                </div>
-
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
-
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
-                        </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
-
-                            <p class="text-muted fs-sm m-0 text-truncate">
-                                Lorem,
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
-
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
-
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
-                        </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
-
-                            <p class="text-muted fs-sm m-0 text-truncate">
-                                Lorem,
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
-
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
-
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
-                        </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
-
-                            <p class="text-muted fs-sm m-0 text-truncate">
-                                Lorem,
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
-
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
-
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
-                        </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
-
-                            <p class="text-muted fs-sm m-0 text-truncate">
-                                Lorem,
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
-
-                <div class="card p-3 border-0 rounded-0 border-bottom">
-                    <a href="chat-mobile.html" class="text-decoration-none">
-
-                        <div
-                            class="card-header border-0 p-0 m-0 d-flex flex-row justify-content-between align-items-center w-100">
-                            <h5 class="card-title text-start m-0">John Doe</h5>
-                            <span class="badge rounded-pill bg-primary">14</span>
-                        </div>
-                        <div class="card-body d-flex flex-row gap-3 p-0 justify-content-between align-items-center">
-
-                            <p class="text-muted fs-sm m-0 text-truncate">
-                                Lorem,
-                                ipsum
-                                dolor sit
-                                amet
-                                consectetur
-                                adipisicing elit. Ullam ipsam quas doloribus commodi </p>
-
-                            <p class="card-text fs-sm text-muted m-0">00:00pm</p>
-
-
-
-                        </div>
-                    </a>
-
-
-                </div>
+                    </div>
+                </a>
 
 
 
             </div>
+
+        </div>
 
     </main>
 
