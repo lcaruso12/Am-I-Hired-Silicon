@@ -15,34 +15,34 @@ $prefix: si- !default;
 
 // Grayscale
 $white: #fff !default;
-$gray-50: #f7f8f8;
-$gray-100: #E0E6E6 !default;
-$gray-200: #CFD8D8 !default;
-$gray-300: #B6C3C3 !default;
-$gray-400: #8FA2A3 !default;
-$gray-500: #789091 !default;
-$gray-600: #4E676A !default;
-$gray-700: #314349 !default;
-$gray-800: #142c34 !default;
-$gray-900: #101d23 !default;
+$gray-50: #F7F7F8;
+$gray-100: #E0E3E6 !default;
+$gray-200: #CFD3D8 !default;
+$gray-300: #B6BDC3 !default;
+$gray-400: #8F97A3 !default;
+$gray-500: #788391 !default;
+$gray-600: #4E5A6A !default;
+$gray-700: #313949 !default;
+$gray-800: #131E33 !default;
+$gray-900: #101623 !default;
 $black: #000 !default;
 
 // Brand Colors - Primary
-$primary-50: #eff2fc;
-$primary-100: #d5defa !default;
-$primary-200: #b9c9f9 !default;
-$primary-300: #9cb2f7 !default;
-$primary-400: #829cf4 !default;
-$primary-500: #6b88f2 !default;
-$primary-600: #647ee5 !default;
-$primary-700: #5a72d8 !default;
-$primary-800: #5267cb !default;
-$primary-900: #4654b5 !default;
+$primary-50: #F1F3FC;
+$primary-100: #E0E4F8 !default;
+$primary-200: #C9D0F3 !default;
+$primary-300: #A3B1EB !default;
+$primary-400: #697DDE !default;
+$primary-500: #5663D7 !default;
+$primary-600: #4852C2 !default;
+$primary-700: #3B45B2 !default;
+$primary-800: #373E90 !default;
+$primary-900: #2F346A !default;
 
 
 
 // Theme colors
-$primary: $primary-500 !default;
+$primary: $primary-400 !default;
 $secondary: $primary-200 !default;
 $info: #4c82f7 !default;
 $success: #22c55e !default;
@@ -65,12 +65,12 @@ $theme-colors: (
 
 // Faded colors map
 $theme-faded-colors: (
-  'primary': rgba($primary, 0.12),
-  'secondary': rgba($secondary, 0.30),
-  'success': rgba($success, 0.12),
-  'info': rgba($info, 0.12),
-  'warning': rgba($warning, 0.12),
-  'danger': rgba($danger, 0.12),
+  'primary': rgba($primary, 0.16),
+  'secondary': rgba($secondary, 0.16),
+  'success': rgba($success, 0.16),
+  'info': rgba($info, 0.16),
+  'warning': rgba($warning, 0.16),
+  'danger': rgba($danger, 0.16),
   'light': rgba($light, 0.05),
   'dark': rgba($dark, 0.12),
 ) !default;
