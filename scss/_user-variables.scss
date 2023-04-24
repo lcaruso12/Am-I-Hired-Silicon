@@ -53,11 +53,14 @@ CUSTOM CSS
 		}
 	}
 }
+
 .mobile-nav-toggler {
+	
 	display: none;
 	justify-content: center;
 	align-items: center;
 }
+
 .logo{
 	height: 1.5rem;
 }
@@ -91,7 +94,6 @@ CUSTOM CSS
 		margin: 0;
 	}
 }
-
 
 .badge-icon{
 	width: .75rem;
@@ -172,9 +174,17 @@ CUSTOM CSS
 	
 
 }
+.listing-header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: .5rem;
+}
 
 .pipeline-steps{
 	min-width: 300px !important;
+	min-height: 500px;
 	.card-body{
 
 		max-height: 700px;
@@ -191,6 +201,7 @@ gap: 1rem;
 padding: 1.25rem;
 background:$gray-50;
 border-bottom: solid 1px $gray-100;
+
 }
 .chat-list-body{
 	display: flex;
@@ -316,9 +327,11 @@ background:$gray-50;
 		border: none !important;
 		background: $primary-100 !important;
 	}
+	z-index: 3;
 }
 
 .offcanvas{
+	
 	.navbar-nav{
 		.nav-item{
 			
@@ -355,6 +368,9 @@ MEDIA QUERIES
 		left: 50%;
 		top: 50%;
 		transform: translate(-50% , -50%);
+	}
+	.listing-header{
+		flex-direction: column;
 	}
 }
 
