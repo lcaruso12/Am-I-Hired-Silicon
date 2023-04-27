@@ -121,6 +121,13 @@ CUSTOM CSS
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 3rem;
+}
+.listing-header .searchbar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   gap: 0.5rem;
 }
 
@@ -298,6 +305,7 @@ MEDIA QUERIES
   }
   .listing-header {
     flex-direction: column;
+    gap: 0.5rem;
   }
 }
 .text-gradient-primary {
@@ -331,7 +339,7 @@ MEDIA QUERIES
   --si-gray-800: #131E33;
   --si-gray-900: #101623;
   --si-primary: #697DDE;
-  --si-secondary: #C9D0F3;
+  --si-secondary: #E0E3E6;
   --si-success: #22c55e;
   --si-info: #4c82f7;
   --si-warning: #ffba08;
@@ -339,7 +347,7 @@ MEDIA QUERIES
   --si-light: #fff;
   --si-dark: #101623;
   --si-primary-rgb: 105, 125, 222;
-  --si-secondary-rgb: 201, 208, 243;
+  --si-secondary-rgb: 224, 227, 230;
   --si-success-rgb: 34, 197, 94;
   --si-info-rgb: 76, 130, 247;
   --si-warning-rgb: 255, 186, 8;
@@ -3037,19 +3045,19 @@ textarea.form-control-lg {
 
 .btn-secondary {
   --si-btn-color: #000;
-  --si-btn-bg: #C9D0F3;
-  --si-btn-border-color: #C9D0F3;
+  --si-btn-bg: #E0E3E6;
+  --si-btn-border-color: #E0E3E6;
   --si-btn-hover-color: #000;
-  --si-btn-hover-bg: #d1d7f5;
-  --si-btn-hover-border-color: #ced5f4;
-  --si-btn-focus-shadow-rgb: 171, 177, 207;
+  --si-btn-hover-bg: #e5e7ea;
+  --si-btn-hover-border-color: #e3e6e9;
+  --si-btn-focus-shadow-rgb: 190, 193, 196;
   --si-btn-active-color: #000;
-  --si-btn-active-bg: #d4d9f5;
-  --si-btn-active-border-color: #ced5f4;
+  --si-btn-active-bg: #e6e9eb;
+  --si-btn-active-border-color: #e3e6e9;
   --si-btn-active-shadow: unset;
   --si-btn-disabled-color: #000;
-  --si-btn-disabled-bg: #C9D0F3;
-  --si-btn-disabled-border-color: #C9D0F3;
+  --si-btn-disabled-bg: #E0E3E6;
+  --si-btn-disabled-border-color: #E0E3E6;
 }
 
 .btn-success {
@@ -3172,19 +3180,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-secondary {
-  --si-btn-color: #C9D0F3;
-  --si-btn-border-color: #C9D0F3;
+  --si-btn-color: #E0E3E6;
+  --si-btn-border-color: #E0E3E6;
   --si-btn-hover-color: #000;
-  --si-btn-hover-bg: #C9D0F3;
-  --si-btn-hover-border-color: #C9D0F3;
-  --si-btn-focus-shadow-rgb: 201, 208, 243;
+  --si-btn-hover-bg: #E0E3E6;
+  --si-btn-hover-border-color: #E0E3E6;
+  --si-btn-focus-shadow-rgb: 224, 227, 230;
   --si-btn-active-color: #000;
-  --si-btn-active-bg: #C9D0F3;
-  --si-btn-active-border-color: #C9D0F3;
+  --si-btn-active-bg: #E0E3E6;
+  --si-btn-active-border-color: #E0E3E6;
   --si-btn-active-shadow: unset;
-  --si-btn-disabled-color: #C9D0F3;
+  --si-btn-disabled-color: #E0E3E6;
   --si-btn-disabled-bg: transparent;
-  --si-btn-disabled-border-color: #C9D0F3;
+  --si-btn-disabled-border-color: #E0E3E6;
   --si-gradient: none;
 }
 
@@ -3292,7 +3300,7 @@ textarea.form-control-lg {
 
 .btn-link {
   --si-btn-font-weight: 400;
-  --si-btn-color: #C9D0F3;
+  --si-btn-color: #E0E3E6;
   --si-btn-bg: transparent;
   --si-btn-border-color: transparent;
   --si-btn-hover-color: var(--si-link-hover-color);
@@ -4859,12 +4867,12 @@ textarea.form-control-lg {
 }
 
 .alert-secondary {
-  --si-alert-color: #b5bbdb;
-  --si-alert-bg: #fafafe;
-  --si-alert-border-color: #e4e8f9;
+  --si-alert-color: #cacccf;
+  --si-alert-bg: #fcfcfd;
+  --si-alert-border-color: #f0f1f3;
 }
 .alert-secondary .alert-link {
-  color: #9196af;
+  color: #a2a3a6;
 }
 
 .alert-success {
@@ -6301,7 +6309,7 @@ textarea.form-control-lg {
 
 .text-bg-secondary {
   color: #000 !important;
-  background-color: RGBA(201, 208, 243, var(--si-bg-opacity, 1)) !important;
+  background-color: RGBA(224, 227, 230, var(--si-bg-opacity, 1)) !important;
 }
 
 .text-bg-success {
@@ -6342,10 +6350,10 @@ textarea.form-control-lg {
 }
 
 .link-secondary {
-  color: #C9D0F3 !important;
+  color: #E0E3E6 !important;
 }
 .link-secondary:hover, .link-secondary:focus {
-  color: #d4d9f5 !important;
+  color: #e6e9eb !important;
 }
 
 .link-success {
@@ -7927,7 +7935,7 @@ textarea.form-control-lg {
 }
 
 .text-secondary {
-  color: #C9D0F3 !important;
+  color: #E0E3E6 !important;
 }
 
 .text-success {
@@ -8192,7 +8200,7 @@ textarea.form-control-lg {
 }
 
 .bg-faded-secondary {
-  background-color: rgba(201, 208, 243, 0.16) !important;
+  background-color: rgba(224, 227, 230, 0.16) !important;
 }
 
 .bg-faded-success {
@@ -12452,10 +12460,10 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 .btn-secondary {
   --si-btn-hover-color: #fff;
   --si-btn-active-color: #fff;
-  --si-btn-hover-bg: #aab5ec;
-  --si-btn-active-bg: #aab5ec;
-  --si-btn-hover-border-color: #aab5ec;
-  --si-btn-active-border-color: #aab5ec;
+  --si-btn-hover-bg: #cbd0d5;
+  --si-btn-active-bg: #cbd0d5;
+  --si-btn-hover-border-color: #cbd0d5;
+  --si-btn-active-border-color: #cbd0d5;
   --si-btn-disabled-color: #fff;
 }
 
@@ -12579,12 +12587,12 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .btn-outline-secondary {
-  --si-btn-color: #131E33;
+  --si-btn-color: #313949;
   --si-btn-hover-color: #101623;
-  --si-btn-active-color: #101623;
+  --si-btn-active-color: #B6BDC3;
   --si-btn-hover-bg: #B6BDC3;
   --si-btn-active-bg: #B6BDC3;
-  --si-btn-border-color: #8F97A3;
+  --si-btn-border-color: #B6BDC3;
   --si-btn-hover-border-color: #B6BDC3;
   --si-btn-active-border-color: #B6BDC3;
   --si-btn-disabled-color: #313949;
@@ -12605,7 +12613,7 @@ html:not([dir=rtl]) .range-slider-ui.noUi-horizontal .noUi-handle {
 }
 
 .btn-icon {
-  --si-btn-size: 2.5rem;
+  --si-btn-size: 2.8125rem;
   --si-btn-icon-size: 1.25rem;
   flex-shrink: 0;
   width: var(--si-btn-size);
@@ -14169,7 +14177,7 @@ a.badge {
 }
 
 .alert-secondary {
-  --si-alert-bg: #cdd4f4;
+  --si-alert-bg: #e3e6e8;
 }
 
 .alert-secondary,
@@ -16126,8 +16134,8 @@ img-comparison-slider:focus {
   --si-alert-border-color: rgba(105, 125, 222, .25);
 }
 .dark-mode .alert-secondary {
-  --si-alert-bg: rgba(201, 208, 243, .05);
-  --si-alert-border-color: rgba(201, 208, 243, .25);
+  --si-alert-bg: rgba(224, 227, 230, .05);
+  --si-alert-border-color: rgba(224, 227, 230, .25);
 }
 .dark-mode .alert-success {
   --si-alert-bg: rgba(34, 197, 94, .05);

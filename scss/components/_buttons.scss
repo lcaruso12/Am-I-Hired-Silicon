@@ -72,12 +72,12 @@
 }
 
 .btn-outline-secondary {
-  --#{$prefix}btn-color: #{$gray-800};
+  --#{$prefix}btn-color: #{$gray-700};
   --#{$prefix}btn-hover-color: #{$gray-900};
-  --#{$prefix}btn-active-color: #{$gray-900};
+  --#{$prefix}btn-active-color: #{$gray-300};
   --#{$prefix}btn-hover-bg: #{$gray-300};
   --#{$prefix}btn-active-bg: #{$gray-300};
-  --#{$prefix}btn-border-color: #{$gray-400};
+  --#{$prefix}btn-border-color: #{$gray-300};
   --#{$prefix}btn-hover-border-color: #{$gray-300};
   --#{$prefix}btn-active-border-color: #{$gray-300};
   --#{$prefix}btn-disabled-color: #{$gray-700};
@@ -104,7 +104,7 @@
 // Icon button
 
 .btn-icon {
-  --#{$prefix}btn-size: 2.5rem;
+  --#{$prefix}btn-size: 2.8125rem; // Rarisimo, pero sino no coincide con el size del normal button o el input. Revisar!!
   --#{$prefix}btn-icon-size: #{$font-size-base * 1.25};
 
   flex-shrink: 0;
