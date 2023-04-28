@@ -35,65 +35,104 @@
     <!-- Header-->
     <header class="header bg-light shadow-sm sticky-top">
 
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center gap-4">
 
-            <div class="d-flex justify-content-between align-items-center py-1 ">
-                <!-- Responsive nav-->
-                <div class="mobile-nav-toggler d-md-none d-flex justify-content-center align-items-center"
-                    style="min-width: 2.5rem;">
-                    <nav class="row navbar navbar-expand-lg align-items-center p-0">
+            <!-- Responsive nav-->
+            <div class="mobile-nav-toggler d-lg-none d-flex justify-content-center align-items-center"
+                style="min-width: 2.5rem;">
+                <nav class="row navbar navbar-expand-lg align-items-center p-0">
 
-                        <button class="btn btn-light btn-icon " type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasLeft">
-                            <i data-feather="menu"></i> </span>
+                    <button class="btn btn-light btn-icon " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft">
+                        <i data-feather="menu"></i> </span>
 
-                        </button>
-                    </nav>
+                    </button>
+                </nav>
+            </div>
+
+            <a href="index.html">
+                <img class="logo" src="img/itc-logo.svg" alt="IT Crowd">
+            </a>
+
+            <nav class="row navbar navbar-expand-lg w-100">
+
+                <div class="navbody collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <i class="" data-feather="home"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">
+                                <i class="" data-feather="briefcase"></i>
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">
+                                <i class="" data-feather="message-square"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="my-organization.html">
+                                <i class="" data-feather="book"></i>
+                                My Organization
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="users.html">
+                                <i class="" data-feather="users"></i>
+                                Users
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="template-messages.html">
+                                <i class="" data-feather="file-text"></i>
+                                Templates
+                            </a>
+                        </li>
+                    </ul>
                 </div>
+            </nav>
 
-                <a href="index.html">
-                    <img class="logo" src="img/itc-logo.svg" alt="IT Crowd">
-                </a>
+            <div class="nav dropdown d-block order-lg-3">
 
-                <div class="nav dropdown d-block order-lg-3">
-
-                    <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
-
+                <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="d-none d-sm-block ps-2">
                         <div class="avatar">
                             <p>LO</p>
                         </div>
+                    </div>
+                </a>
 
-                        <div class="d-none d-sm-block ps-2">
+                <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
+                    <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                            <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
+                            Profile
 
-                            <div class="fs-sm dropdown toggle">Lucas O.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html" class="dropdown-item d-flex align-items-center">
+                            <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
+                            Log Out
 
-                                <i class="card-icon" data-feather="chevron-down"></i>
-                            </div>
-                        </div>
-                    </a>
+                        </a>
+                    </li>
 
-                    <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
-                        <li>
-                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
-                                Profile
-
-                            </a>
-                        </li>
-                        <li>
-                            <a href="sign-up.html" class="dropdown-item d-flex align-items-center">
-                                <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
-                                Log Out
-
-                            </a>
-                        </li>
-
-                    </ul>
-                </div>
-
+                </ul>
             </div>
 
+
+
         </div>
+
 
         <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1">
             <div class="offcanvas-header border-bottom">
@@ -103,9 +142,9 @@
                 <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
             </div>
             <div class="offcanvas-body p-3">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav d-flex flex-column justify-content-start gap-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="jobs.html">Jobs</a>
@@ -114,7 +153,7 @@
                         <a class="nav-link" href="messages-mobile.html">Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="my-organization.html">My Organization</a>
+                        <a class="nav-link" aria-current="page" href="my-organization.html">My Organization</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="users.html">Users</a>
@@ -127,40 +166,8 @@
             </div>
         </div>
 
-        <div class="navigation border-top">
-            <div class="container">
-                <nav class="row navbar navbar-expand-lg align-items-center p-0">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i data-feather="menu"></i> </span>
-                    </button>
-                    <div class="navBody collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="jobs.html">Jobs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="messages.html">Messages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="my-organization.html">My
-                                    Organization</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="users.html">Users</a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="template-messages.html">Templates</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+
 
     </header>
 
@@ -168,139 +175,104 @@
 
         <div class="container px-0 py-2">
 
-            <div class="row m-0 m-xl-0 gy-3 gx-xl-4">
+            <div class="row m-0 m-xl-0 pt-4">
+                <div class="col-12">
 
-                <div class="col-12 col-md-3 col-xl-3 ">
+                    <div class="d-flex flex-column justify-content-center align-items-start gap-4">
 
-                    <div class="card p-3 d-flex flex-column gap-3">
-                        <div class="card-body p-0 d-flex flex-column gap 2">
+                        <div class="d-flex flex-row justify-content-between align-items-start w-100">
 
-                            <div
-                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
-
-                                <i class="icon text-primary" data-feather="briefcase"></i>
-
-                                <div class="card-body p-0">
-                                    <p class="m-0">27</p>
-                                    <p class="m-0">Jobs</p>
+                            <div class="d-flex flex-row gap-3 align-items-center">
+                                <div class="organization-avatar">
+                                    <img src="img/itc-logo.svg" alt="IT Crowd">
                                 </div>
-
-
-
+                                <div class="">
+                                    <p class="m-0 fw-semibold">My Organization</p>
+                                    <h3>IT Crowd</h3>
+                                </div>
                             </div>
 
-                            <div
-                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
-
-                                <i class="icon text-primary" data-feather="check-circle"></i>
-
-                                <div class="card-body p-0">
-                                    <p class="m-0">17</p>
-                                    <p class="m-0">Potential Hires</p>
-
-                                </div>
-
-
-
-                            </div>
-
-                            <div
-                                class="p-1 border-0 border-bottom rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
-
-                                <i class="icon text-primary" data-feather="thumbs-up"></i>
-
-                                <div class="card-body p-0">
-                                    <p class="m-0">6</p>
-                                    <p class="m-0">Succesful Hires</p>
-
-                                </div>
-
-
-
-                            </div>
-
-                            <div
-                                class="p-1 border-0  rounded-0 d-flex flex-row  gap-3 justify-content-center align-items-center">
-
-                                <i class="icon text-primary" data-feather="users"></i>
-
-                                <div class="card-body p-0">
-                                    <p class="m-0">125</p>
-                                    <p class="m-0">Candidates</p>
-
-                                </div>
-
-
-
-                            </div>
-
+                            <button class="btn faded-primary">
+                                <i data-feather="edit-2"></i>
+                                Edit
+                            </button>
 
                         </div>
 
-                        <button type="button"
-                            class="btn btn-primary btn-lg d-flex flex-row align-items-center justify-content-center gap-2"
-                            data-bs-toggle="modal" data-bs-target="#edit-modal">
-                            <i class="button-icon" data-feather="edit-2"></i>
-                            Edit Organization
+                    </div>
 
-                        </button>
+                </div>
+            </div>
+
+            <div class="row mx-0 my-4">
+                <div class="col-7">
+                    <div class="card border-0 p-3 shadow-sm">
+                        <div class="d-flex flex-column gap-3">
+
+                            <div class="card-header">
+                                <h5>About IT Crowd</h5>
+                            </div>
+                            <div class="card-text">
+                                We are a leading software organization dedicated to delivering innovative and
+                                customized solutions for businesses in the digital age. With our skilled team of
+                                software engineers, designers, and project managers, we provide reliable,
+                                scalable,
+                                and secure software products and services that drive efficiency, productivity,
+                                and
+                                growth for our clients across diverse industries.
+                                From web and mobile development to cloud computing, artificial intelligence,
+                                machine
+                                learning, and data analytics, our expertise spans a wide range of technologies.
+                                We
+                                work closely with our clients to understand their business objectives and exceed
+                                their expectations. Our approach includes effective communication,
+                                collaboration,
+                                and a deep understanding of our clients' requirements to ensure that our
+                                software
+                                solutions are tailored to meet their unique needs.
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
 
-                <div class="col-12 col-md-9 col-xl-9">
-                    <div class="card shadow-sm border-0 d-flex flex-row flex-wrap justify-content-between p-3 gap-3">
-
-                        <div class="d-flex flex-column justify-content-start align-items-center gap-3 ">
-
-                            <div class="d-flex flew-row justify-content-between align-items-center w-100">
-
-                                <label class="form-label m-0">Organization Admin</label>
-
-                                <i class="text-muted" type="button" data-bs-toggle="tooltip" data-bs-placement="top"
-                                    title="You can change the organization admin at the user section"
-                                    data-feather="info" style="width: 1rem; height: 1rem;"></i>
-
+                <div class="col-5">
+                    <div class="card border-0 p-3 shadow-sm">
+                        <div class="d-flex flex-column gap-3">
+                            <div class="card-header">
+                                <h5>Main Contact</h5>
                             </div>
-
-
-                            <div class="d-flex flex-column justify-content-center align-items-center gap-2">
+                            <div class="d-flex flex-row justify-content-start align-items-center gap-3"
+                                style="padding: 12px 0">
 
                                 <div class="avatar">
-                                    <h2 class="text-primary mb-0">LO</h2>
+                                    <p>LO</p>
                                 </div>
 
-                                <h6 class="m-0 w-100"> Lucas Osherovsky</h6>
+                                <div class="d-flex flex-column justify-content-start align-items-start gap-2">
+                                    <h5 class="m-0">Lucas Osherovsky</h5>
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="phone"></i>
+                                            +54113425676
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="mail"></i>
+                                            losherovsky@itcrowdarg.com
+                                        </li>
 
-                                <ul class="list-group list-group-flush d-flex flex-column gap-1">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
-                                        <i class="card-icon" data-feather="mail"></i>
-                                        <span class="fs-sm">losherovsky@itcrowdarg.com</span>
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-1 border-0">
-                                        <i class="card-icon " data-feather="phone"></i>
-                                        <span class="fs-sm">+541155653426
-                                        </span></li>
-                                </ul>
+                                    </ul>
+                                </div>
+
                             </div>
 
                         </div>
 
-                        <div style="max-width: 650px;">
-                            <label for="exampleInputEmail1" class="form-label m-0">Description</label>
-                            <p class="card-text"> Lorem
-                                ipsum dolor, sit amet consectetur adipisicing elit. Aperiam, nostrum.
-                                Odio, dolores aliquam, maiores labore nemo ullam dolorum explicabo quae,
-                                libero vitae porro quo voluptatibus odit itaque incidunt reprehenderit.
-                            </p>
-                        </div>
-
-
                     </div>
-
                 </div>
-
             </div>
+
 
 
 
