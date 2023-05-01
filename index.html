@@ -175,20 +175,17 @@
 
     <main class="home">
 
-        <div class="container px-0 pt-2" style="padding-bottom: 40px;">
-
-
+        <div class="container">
 
             <!-- Row 1 | Overview -->
 
-            <div class="row m-0 m-xl-0 gy-3 ">
+            <div class="row">
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="briefcase"></i>
+                        <i class="text-primary" data-feather="briefcase" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">27</h5>
@@ -204,10 +201,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="check-circle"></i>
+                        <i class="text-primary" data-feather="check-circle" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">17</h5>
@@ -223,10 +219,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="thumbs-up"></i>
+                        <i class="text-primary" data-feather="thumbs-up" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">6</h5>
@@ -242,10 +237,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="users"></i>
+                        <i class="text-primary" data-feather="users" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">125</h5>
@@ -264,23 +258,23 @@
 
             <!-- Row 2 | Body -->
 
-            <div class="row  m-0 m-xl-0 gy-3 gy-xl-3">
+            <div class="row mt-4">
 
                 <!-- Col 1 | Action Required -->
 
                 <div class="col-12 col-md-6 col-xl-4 mt-4">
 
-                    <div class="card shadow-sm border-0 p-3 d-flex">
+                    <div class="card d-flex gap-0">
 
-                        <div class="card-header p-0 border-0 d-flex align-items-center justify-content-between w-100">
+                        <div class="card-header">
 
-                            <h5 class=" m-0 text-uppercase fs-6">Action Required</h5>
+                            <h5>Action Required</h5>
 
                         </div>
 
-                        <div class="card-body p-0 d-flex flex-column gap-1" id="action-required">
+                        <div class="card-body p-0 d-flex flex-column gap-0" id="action-required">
 
-                            <p class="card-text m-0 pb-2">These candidates haven't heard from you in a while. Send them
+                            <p class="card-text m-0">These candidates haven't heard from you in a while. Send them
                                 a
                                 quick
                                 note to make sure
@@ -289,7 +283,7 @@
                                 forget you.
                             </p>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-top">
+                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
 
                                 <div class="card-body d-flex  flex-column gap-0 p-0">
                                     <div class="d-flex flex-column gap-0">
@@ -330,7 +324,7 @@
 
                             </div>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-top">
+                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
 
                                 <div class="card-body d-flex  flex-column gap-0 p-0">
                                     <div class="d-flex flex-column gap-0">
@@ -370,7 +364,7 @@
 
                             </div>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-top">
+                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
 
                                 <div class="card-body d-flex  flex-column gap-0 p-0">
                                     <div class="d-flex flex-column gap-0">
@@ -410,7 +404,7 @@
 
                             </div>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-top">
+                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
 
                                 <div class="card-body d-flex  flex-column gap-0 p-0">
                                     <div class="d-flex flex-column gap-0">
@@ -459,253 +453,263 @@
                 <!-- Col 2 | Latest Jobs -->
 
                 <div class="col-12 col-md-6 col-xl-8 mt-4 ">
+                    <div class="d-flex flex-column gap-4">
 
-                    <div class="p-0 border-0 d-flex align-items-center justify-content-between w-100 my-4">
-                        <h5 class="m-0 text-uppercase fs-6">Latest Jobs</h5>
-                        <button type="button" class="btn btn-link btn-sm">
-                            <a href="jobs.html" class="text-decoration-none"> View All</a>
-                        </button>
-                    </div>
+                        <div class="listing-header">
 
-                    <div class="card-body p-0 d-flex flex-column gap-3">
+                            <h4 class="m-0 w-100">Latest Jobs</h4>
 
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
+                            <div class="searchbar">
 
-                                <div class="card-title m-0 ">
-                                    <h5 class="m-0">Ssr UX UI Designer</h5>
+                                <input class="form-control" id="input-normal" type="text" placeholder="Search...">
 
-                                    <span class="badge bg-faded-success text-success rounded-pill">Active</span>
-                                </div>
-
-
-                            </div>
-
-                            <div class="card-body p-0">
-
-                                <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
+                                <button class="btn faded-primary" type="button">
+                                    <i class="card-icon" data-feather="search"></i>
+                                </button>
                             </div>
 
                         </div>
 
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
+                        <div class="card-body p-0 d-flex flex-column gap-3">
 
-                                <div class="card-title m-0 ">
-                                    <h5 class="m-0">Ssr UX UI Designer</h5>
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="card-header p-0 border-0 w-100">
 
-                                    <span class="badge bg-faded-success text-success rounded-pill">Active</span>
+                                    <div class="card-title m-0 ">
+                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+
+                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
+                                    </div>
+
+
                                 </div>
 
+                                <div class="card-body p-0">
 
-                            </div>
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
 
-                            <div class="card-body p-0">
-
-                                <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
-
-                                <div class="card-title m-0 ">
-                                    <h5 class="m-0">Ssr UX UI Designer</h5>
-
-                                    <span class="badge bg-faded-success text-success rounded-pill">Active</span>
                                 </div>
 
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
 
-                            </div>
+                                <div class="dropdown-menu my-1">
 
-                            <div class="card-body p-0">
-
-                                <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
 
 
-                            </div>
-
-                        </div>
-
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
-
-                                <div class="card-title m-0 ">
-                                    <h5 class="m-0">Ssr UX UI Designer</h5>
-
-                                    <span class="badge bg-faded-success text-success rounded-pill">Active</span>
                                 </div>
 
+                            </div>
+
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="card-header p-0 border-0 w-100">
+
+                                    <div class="card-title m-0 ">
+                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+
+                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <div class="card-body p-0">
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="card-header p-0 border-0 w-100">
 
-                                <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
+                                    <div class="card-title m-0 ">
+                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+
+                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="card-header p-0 border-0 w-100">
 
-                            <div class="dropdown-menu my-1">
+                                    <div class="card-title m-0 ">
+                                        <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#"
-                                    class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
+                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
+                                    </div>
 
+
+                                </div>
+
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
+
 
                         </div>
-
-
                     </div>
 
 

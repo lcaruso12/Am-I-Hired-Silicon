@@ -174,39 +174,33 @@
 
     <!-- Templates-->
     <main class="templates">
-        <div class="container px-0 py-2" style="padding-bottom: 40px;">
+        <div class="container">
 
-            <div class="row m-0 m-xl-0 gy-3 gx-xl-4">
+            <div class="row">
 
                 <div class="col-12 col-md-3 col-xl-3">
 
-                    <div class="card  d-flex flex-column gap-3 p-3">
+                    <div class="card --outline d-flex flex-column gap-3 p-3">
 
                         <div class="list-group rounded-0 border-0" role="tablist">
 
-                            <a href="#list-home" id="list-home-list" class="list-group-item list-group-item-action rounded-1 active d-flex
-                                justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-home">
+                            <a class="list-group-item active list-group-item-action">
                                 All
                                 <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
-                            <a href="#list-profile" id="list-profile-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-profile">
+                            <a class="list-group-item list-group-item-action">
                                 Advance
                                 <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
-                            <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
+                            <a class="list-group-item list-group-item-action">
                                 Feedback
                                 <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
-                            <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
+                            <a class="list-group-item list-group-item-action">
                                 Hired
                                 <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
-                            <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
+                            <a class="list-group-item list-group-item-action">
                                 Disqualified
                                 <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
@@ -235,7 +229,7 @@
 
                             <div class="searchbar">
 
-                                <input class="form-control" id="input-normal" type="text" placeholder="Search Opening">
+                                <input class="form-control" id="input-normal" type="text" placeholder="Search...">
 
                                 <button class="btn faded-primary" type="button">
                                     <i class="card-icon" data-feather="search"></i>
@@ -264,7 +258,7 @@
                         <div class="d-flex flex-column gap-3">
 
 
-                            <div class="card card-selected d-flex flex-row p-3 gap-3 border-primary shadow-sm">
+                            <div class="card --selected d-flex flex-row gap-3">
                                 <input class="form-check-input" type="checkbox" checked style="min-width:1rem;">
                                 <div class="d-flex flex-column w-100 gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -317,7 +311,7 @@
                                 </div>
                             </div>
 
-                            <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm">
+                            <div class="card d-flex flex-row gap-3">
                                 <input class="form-check-input" type="checkbox" style="min-width:1rem;">
                                 <div class="d-flex flex-column w-100 gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -370,7 +364,7 @@
                                 </div>
                             </div>
 
-                            <div class="card card-selected d-flex flex-row p-3 gap-3 border-primary shadow-sm">
+                            <div class="card --selected d-flex flex-row gap-3">
                                 <input class="form-check-input" type="checkbox" checked style="min-width:1rem;">
                                 <div class="d-flex flex-column w-100 gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -423,7 +417,7 @@
                                 </div>
                             </div>
 
-                            <div class="card d-flex flex-row p-3 gap-3 border-white  shadow-sm">
+                            <div class="card d-flex flex-row gap-3">
                                 <input class="form-check-input" type="checkbox" style="min-width:1rem;">
                                 <div class="d-flex flex-column w-100 gap-2">
                                     <div class="card-header p-0 border-0 w-100">
@@ -494,16 +488,6 @@
                                 </a>
                             </li>
                         </ul>
-
-                        <div class="mobile bg-white p-2 border-top shadow-sm">
-
-                            <div class="batch-actions d-flex flex-row gap-1">
-                                <button class="btn btn-outline-secondary">Clear Selection</button>
-                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                                    data-bs-target="#batch-delete">Delete Selection</button>
-                            </div>
-
-                        </div>
 
                     </div>
                 </div>

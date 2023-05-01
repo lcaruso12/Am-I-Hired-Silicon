@@ -59,7 +59,7 @@
                     <ul class="navbar-nav">
                         <li class="nav-item">
 
-                            <a class="nav-link" aria-current="page" href="index.html">
+                            <a class="nav-link" aria-current="page" href="index-aih.html">
                                 <i class="" data-feather="home"></i>
                                 Home
                             </a>
@@ -146,36 +146,35 @@
     </header>
 
     <main class="organizations">
-        <div class="container px-0 py-2" style="padding-bottom: 40px;">
+        <div class="container">
 
-            <div class="row m-0 m-xl-0 gy-3 gx-xl-4">
+            <div class="row">
 
-                <div class="col-12 col-md-3 col-xl-3" id="mobile">
+                <div class="col-12 col-md-3">
 
-                    <div class="card  d-flex flex-column gap-3 p-3">
+                    <div class="card --outline d-flex flex-column gap-3">
 
-                        <div class="list-group rounded-0 border-0" role="tablist">
+                        <div class="list-group" role="tablist">
 
-                            <a href="#list-home" id="list-home-list" class="list-group-item list-group-item-action rounded-1 active d-flex
-                                justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-home">
+                            <a href="#" class="list-group-item active list-group-item-action" data-bs-toggle="list"
+                                role="tab" aria-controls="list-home">
                                 All
-                                <p class="m-0 text-muted fw-light"> (25)</p>
+                                <small>(25)</small>
                             </a>
-                            <a href="#list-profile" id="list-profile-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-profile">
+                            <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab"
+                                aria-controls="list-profile">
                                 Tech
-                                <p class="m-0 text-muted fw-light"> (25)</p>
+                                <small>(25)</small>
                             </a>
-                            <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
+                            <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab"
+                                aria-controls="list-messages">
                                 Internet
-                                <p class="m-0 text-muted fw-light"> (25)</p>
+                                <small>(25)</small>
                             </a>
-                            <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
-                                align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
+                            <a href="#" class="list-group-item list-group-item-action" data-bs-toggle="list" role="tab"
+                                aria-controls="list-messages">
                                 Market
-                                <p class="m-0 text-muted fw-light"> (25)</p>
+                                <small>(25)</small>
                             </a>
 
                         </div>
@@ -191,7 +190,7 @@
 
                 </div>
 
-                <div class="col-12 col-md-9 col-xl-9 pb-5">
+                <div class="col-12 col-md-9">
 
                     <div class="d-flex flex-column gap-4">
 
@@ -201,7 +200,7 @@
 
                             <div class="searchbar">
 
-                                <input class="form-control" id="input-normal" type="text" placeholder="Search Opening">
+                                <input class="form-control" id="input-normal" type="text" placeholder="Search...">
 
                                 <button class="btn faded-primary" type="button">
                                     <i class="card-icon" data-feather="search"></i>
@@ -229,379 +228,193 @@
 
                         </div>
 
-                        <div class="listing-body d-flex flex-column gap-3" style="width: 100%;">
-                            <div class="grid">
+                        <div class="grid">
 
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
+                            <div class="card d-flex flex-row gap-3 g-col-md-6 g-col-12">
+                                <div class="organization-avatar --lg">
+                                    <img src="img/img-placeholder.png" alt="Organization Logo">
+                                </div>
+                                <div class="d-flex flex-column gap-2 w-100">
+
+                                    <div class="card-title m-0 w-100">
+                                        <h5 class="m-0">IT Crowd Arg</h5>
 
                                     </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
 
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
+                                    <div class="card-body p-0 w-100">
+                                        <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing
+                                            elit. Rem odit odio quas quo a maxime accusantium, delectus
+                                            excepturi
+                                            aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
+                                            earum
+                                            soluta!</p>
 
-                                        </div>
+                                    </div>
 
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
 
-                                        </div>
+                                    <div class="dropdown-menu my-1">
 
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
                                         </button>
 
-                                        <div class="dropdown-menu my-1">
 
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
+                            </div>
+
+                            <div class="card d-flex flex-row gap-3 g-col-md-6 g-col-12">
+                                <div class="organization-avatar --lg">
+                                    <img src="img/img-placeholder.png" alt="Organization Logo">
+                                </div>
+                                <div class="d-flex flex-column gap-2 w-100">
+
+                                    <div class="card-title m-0 w-100">
+                                        <h5 class="m-0">IT Crowd Arg</h5>
 
                                     </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
 
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
+                                    <div class="card-body p-0 w-100">
+                                        <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing
+                                            elit. Rem odit odio quas quo a maxime accusantium, delectus
+                                            excepturi
+                                            aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
+                                            earum
+                                            soluta!</p>
 
-                                        </div>
+                                    </div>
 
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
 
-                                        </div>
+                                    <div class="dropdown-menu my-1">
 
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
                                         </button>
 
-                                        <div class="dropdown-menu my-1">
 
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
+                            </div>
+                            <div class="card d-flex flex-row gap-3 g-col-md-6 g-col-12">
+                                <div class="organization-avatar --lg">
+                                    <img src="img/img-placeholder.png" alt="Organization Logo">
+                                </div>
+                                <div class="d-flex flex-column gap-2 w-100">
+
+                                    <div class="card-title m-0 w-100">
+                                        <h5 class="m-0">IT Crowd Arg</h5>
 
                                     </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
 
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
+                                    <div class="card-body p-0 w-100">
+                                        <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing
+                                            elit. Rem odit odio quas quo a maxime accusantium, delectus
+                                            excepturi
+                                            aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
+                                            earum
+                                            soluta!</p>
 
-                                        </div>
+                                    </div>
 
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
 
-                                        </div>
+                                    <div class="dropdown-menu my-1">
 
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
                                         </button>
 
-                                        <div class="dropdown-menu my-1">
 
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
+                            </div>
+                            <div class="card d-flex flex-row gap-3 g-col-md-6 g-col-12">
+                                <div class="organization-avatar --lg">
+                                    <img src="img/img-placeholder.png" alt="Organization Logo">
+                                </div>
+                                <div class="d-flex flex-column gap-2 w-100">
+
+                                    <div class="card-title m-0 w-100">
+                                        <h5 class="m-0">IT Crowd Arg</h5>
 
                                     </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
 
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
+                                    <div class="card-body p-0 w-100">
+                                        <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
+                                            adipisicing
+                                            elit. Rem odit odio quas quo a maxime accusantium, delectus
+                                            excepturi
+                                            aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
+                                            earum
+                                            soluta!</p>
 
-                                        </div>
+                                    </div>
 
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
+                                    <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="" data-feather="more-vertical"></i>
+                                    </button>
 
-                                        </div>
+                                    <div class="dropdown-menu my-1">
 
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            Edit
+                                        </button>
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#confirmation-modal">
+                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <span class="text-danger">Delete</span>
                                         </button>
 
-                                        <div class="dropdown-menu my-1">
 
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
                                     </div>
                                 </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
-
-                                    </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
-
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
-
-                                        </div>
-
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
-
-                                        </div>
-
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
-                                        </button>
-
-                                        <div class="dropdown-menu my-1">
-
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
-
-                                    </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
-
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
-
-                                        </div>
-
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
-
-                                        </div>
-
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
-                                        </button>
-
-                                        <div class="dropdown-menu my-1">
-
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
-
-                                    </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
-
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
-
-                                        </div>
-
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
-
-                                        </div>
-
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
-                                        </button>
-
-                                        <div class="dropdown-menu my-1">
-
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card d-flex flex-row p-3 gap-3 border-white shadow-sm g-col-md-6 g-col-12">
-                                    <div class="organization-avatar --sm">
-
-                                    </div>
-                                    <div class="d-flex flex-column gap-2 w-100">
-
-                                        <div class="card-title m-0 w-100">
-                                            <h5 class="m-0">IT Crowd Arg</h5>
-
-                                        </div>
-
-                                        <div class="card-body p-0 w-100">
-                                            <p class="card-text fs-sm w-100">Lorem ipsum dolor sit, amet consectetur
-                                                adipisicing
-                                                elit. Rem odit odio quas quo a maxime accusantium, delectus
-                                                excepturi
-                                                aliquid alias voluptatibus repudiandae eos? Quae esse vel error fuga
-                                                earum
-                                                soluta!</p>
-
-                                        </div>
-
-                                        <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="" data-feather="more-vertical"></i>
-                                        </button>
-
-                                        <div class="dropdown-menu my-1">
-
-
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#edit-modal">
-                                                <i class="card-icon me-1" data-feather="edit-2"></i>
-                                                Edit
-                                            </button>
-                                            <button class="dropdown-item" data-bs-toggle="modal"
-                                                data-bs-target="#confirmation-modal">
-                                                <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                                <span class="text-danger">Delete</span>
-                                            </button>
-
-
-                                        </div>
-                                    </div>
-                                </div>
-
-
                             </div>
 
 
 
-
-
                         </div>
-
 
                         <ul class="pagination justify-content-center">
                             <li class="page-item">
@@ -619,16 +432,6 @@
                             </li>
                         </ul>
 
-                        <div class="mobile bg-white p-2 border-top shadow-sm">
-
-                            <div class="batch-actions d-flex flex-row gap-1">
-                                <button class="btn btn-outline-secondary">Clear Selection</button>
-                                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
-                                    data-bs-target="#batch-delete">Delete Selection</button>
-                            </div>
-
-                        </div>
-
                     </div>
 
                 </div>
@@ -645,42 +448,50 @@
                             </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body ">
+                        <div class="modal-body">
 
-                            <form class="d-flex flex-column justify-content-start align-items-center">
-                                <div class="organization-avatar m-0">
-                                    <img src="img/itc-logo.svg" alt="IT Crowd">
-                                </div>
-                                <div class="mb-3 w-100">
-                                    <label for="formFile" class="form-label">Organization logo</label>
+                            <form class="form">
+
+                                <div class="form-input">
+
+                                    <div class="text-center mb-2">
+
+                                        <div class="organization-avatar --xl mx-auto">
+                                            <img src="img/img-placeholder.png" alt="Organization Logo">
+
+                                        </div>
+
+                                    </div>
+                                    <label for="formFile" class="form-label">Organization Logo</label>
                                     <input class="form-control" type="file" id="formFile">
                                 </div>
-                                <div class="mb-3 w-100">
+
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Organization Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator First Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator Last Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator Email</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Phone Number</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleFormControlTextarea1" class="form-label">About</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
@@ -694,7 +505,7 @@
                                 Cancel
 
                             </button>
-                            <button type="button" class="btn btn-success">
+                            <button type="button" class="btn btn-primary">
 
                                 Create Organization
 
@@ -714,47 +525,53 @@
                             </h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body ">
+                        <div class="modal-body">
 
-                            <form class="d-flex flex-column justify-content-start align-items-center">
-                                <div class="organization-avatar m-0">
-                                    <img src="img/itc-logo.svg" alt="IT Crowd">
-                                </div>
-                                <div class="mb-3 w-100">
-                                    <label for="formFile" class="form-label">Organization logo</label>
+                            <form class="form">
+
+                                <div class="form-input">
+
+                                    <div class="text-center mb-2">
+
+                                        <div class="organization-avatar --xl mx-auto">
+                                            <img src="img/itc-logo.svg" alt="IT Crowd">
+                                        </div>
+
+                                    </div>
+                                    <label for="formFile" class="form-label">Organization Logo</label>
                                     <input class="form-control" type="file" id="formFile">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Organization Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
-                                    <label for="exampleFormControlTextarea1" class="form-label">Organization
-                                        Description</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator First Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator Last Name</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Administrator Email</label>
                                     <input type="text" class="form-control">
                                 </div>
 
-                                <div class="mb-3 w-100">
+                                <div class="form-input">
                                     <label for="exampleInputEmail1" class="form-label">Phone Number</label>
                                     <input type="text" class="form-control">
                                 </div>
+
+                                <div class="form-input">
+                                    <label for="exampleFormControlTextarea1" class="form-label">About</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+
                             </form>
 
                         </div>
