@@ -174,7 +174,7 @@
     <!-- Jobs-->
     <main class="jobs">
 
-        <div class="container px-0 py-2">
+        <div class="container px-0 py-2" style="padding-bottom: 40px;">
 
             <div class="row m-0 m-xl-0 gy-3 gx-xl-4">
 
@@ -188,28 +188,28 @@
                                 justify-content-between align-items-center" data-bs-toggle="list" role="tab"
                                 aria-controls="list-home">
                                 All
-                                <p class="m-0 text-muted fw-light"> (0)</p>
+                                <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
                             <a href="#list-profile" id="list-profile-list"
                                 class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between align-items-center"
                                 data-bs-toggle="list" role="tab" aria-controls="list-profile">
                                 Active
-                                <p class="m-0 text-muted fw-light"> (0)</p>
+                                <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
                             <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
                                 align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
                                 Draft
-                                <p class="m-0 text-muted fw-light"> (0)</p>
+                                <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
                             <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
                                 align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
                                 Closed
-                                <p class="m-0 text-muted fw-light"> (0)</p>
+                                <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
                             <a href="#list-messages" id="list-messages-list" class="list-group-item list-group-item-action rounded-1 d-flex justify-content-between
                                 align-items-center" data-bs-toggle="list" role="tab" aria-controls="list-messages">
                                 Archived
-                                <p class="m-0 text-muted fw-light"> (0)</p>
+                                <p class="m-0 text-muted fw-light"> (25)</p>
                             </a>
                         </div>
                         <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal"
@@ -226,7 +226,7 @@
 
                 <div class="col-12 col-md-9 col-xl-9 mb-0 ">
 
-                    <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-4">
 
                         <div class="listing-header">
 
@@ -241,17 +241,17 @@
                                 </button>
                             </div>
 
-                            <!-- If Batch action selected, this replaces the searchbar
+                            <!-- When user selects from the listing body, the searchbar is replace by this :)
 
                             <div class="d-flex flex-row gap-2">
                                 <button class=" btn faded-secondary">
-
                                     Clear Selection
                                 </button>
                                 <button type="button" class="btn faded-danger" data-bs-toggle="modal"
                                     data-bs-target="#batch-delete">
-
+                                    <i data-feather="trash-2"></i>
                                     Delete
+
 
                                 </button>
                             </div>
@@ -311,12 +311,32 @@
                                         </a>
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#edit-modal">
-                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            <i class="me-1" data-feather="edit-2"></i>
                                             Edit
                                         </button>
+
+                                        <button class="dropdown-item border-top" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-primary" data-feather="circle"></i>
+                                            Change to Draft
+                                        </button>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-dark" data-feather="circle"></i>
+                                            Change to Closed
+                                        </button>
+
+                                        <button class="dropdown-item border-bottom" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1" data-feather="circle"></i>
+                                            Change to Archived
+                                        </button>
+
+
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#confirmation-modal">
-                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <i class="me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
                                         </button>
 
@@ -374,12 +394,32 @@
                                         </a>
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#edit-modal">
-                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            <i class="me-1" data-feather="edit-2"></i>
                                             Edit
                                         </button>
+
+                                        <button class="dropdown-item border-top" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-success" data-feather="circle"></i>
+                                            Change to Active
+                                        </button>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-dark" data-feather="circle"></i>
+                                            Change to Closed
+                                        </button>
+
+                                        <button class="dropdown-item border-bottom" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1" data-feather="circle"></i>
+                                            Change to Archived
+                                        </button>
+
+
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#confirmation-modal">
-                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <i class="me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
                                         </button>
 
@@ -437,12 +477,32 @@
                                         </a>
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#edit-modal">
-                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            <i class="me-1" data-feather="edit-2"></i>
                                             Edit
                                         </button>
+
+                                        <button class="dropdown-item border-top" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-primary" data-feather="circle"></i>
+                                            Change to Draft
+                                        </button>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-success" data-feather="circle"></i>
+                                            Change to Active
+                                        </button>
+
+                                        <button class="dropdown-item border-bottom" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1" data-feather="circle"></i>
+                                            Change to Archived
+                                        </button>
+
+
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#confirmation-modal">
-                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <i class="me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
                                         </button>
 
@@ -500,12 +560,32 @@
                                         </a>
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#edit-modal">
-                                            <i class="card-icon me-1" data-feather="edit-2"></i>
+                                            <i class="me-1" data-feather="edit-2"></i>
                                             Edit
                                         </button>
+
+                                        <button class="dropdown-item border-top" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-primary" data-feather="circle"></i>
+                                            Change to Draft
+                                        </button>
+
+                                        <button class="dropdown-item" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-dark" data-feather="circle"></i>
+                                            Change to Closed
+                                        </button>
+
+                                        <button class="dropdown-item border-bottom" data-bs-toggle="modal"
+                                            data-bs-target="#edit-modal">
+                                            <i class="me-1 text-success" data-feather="circle"></i>
+                                            Change to Active
+                                        </button>
+
+
                                         <button class="dropdown-item" data-bs-toggle="modal"
                                             data-bs-target="#confirmation-modal">
-                                            <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                            <i class="me-1 text-danger" data-feather="trash-2"></i>
                                             <span class="text-danger">Delete</span>
                                         </button>
 
@@ -570,14 +650,14 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
 
-                                <i class="card-icon" data-feather="x"></i>
+
 
                                 Cancel
 
                             </button>
                             <button type="button" class="btn btn-danger">
 
-                                <i class="card-icon" data-feather="trash-2"></i>
+
                                 Delete
 
                             </button>
@@ -626,12 +706,12 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
 
-                                <i class="card-icon" data-feather="x"></i>
+
 
                                 Cancel
 
                             </button>
-                            <button type="button" class="btn btn-primary">
+                            <button type="button" class="btn btn-success">
 
                                 <i class="card-icon" data-feather="plus"></i>
                                 Create Opening
@@ -681,14 +761,14 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
 
-                                <i class="card-icon" data-feather="x"></i>
+
 
                                 Cancel
 
                             </button>
                             <button type="button" class="btn btn-primary">
 
-                                <i class="card-icon" data-feather="save"></i>
+
                                 Save Changes
 
                             </button>
@@ -712,14 +792,14 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
 
-                                <i class="card-icon" data-feather="x"></i>
+
 
                                 Cancel
 
                             </button>
                             <button type="button" class="btn btn-danger">
 
-                                <i class="card-icon" data-feather="trash-2"></i>
+
                                 Delete
 
                             </button>

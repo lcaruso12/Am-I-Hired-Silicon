@@ -103,11 +103,11 @@
             <div class="nav dropdown d-block order-lg-3">
 
                 <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
-                    <div class="d-none d-sm-block ps-2">
-                        <div class="avatar">
-                            <p>LO</p>
-                        </div>
+
+                    <div class="avatar">
+                        <p>LO</p>
                     </div>
+
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
@@ -192,7 +192,7 @@
                                 </div>
                             </div>
 
-                            <button class="btn faded-primary">
+                            <button class="btn faded-primary" data-bs-toggle="modal" data-bs-target="#edit-modal">
                                 <i data-feather="edit-2"></i>
                                 Edit
                             </button>
@@ -289,52 +289,54 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Organization
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Organization
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body ">
 
-                    <form>
-                        <div class="mb-3">
-                            <label for="formFileDisabled" class="form-label">Organization logo</label>
+                    <form class="d-flex flex-column justify-content-start align-items-center">
+                        <div class="organization-avatar m-0">
+                            <img src="img/itc-logo.svg" alt="IT Crowd">
+                        </div>
+                        <div class="mb-3 w-100">
+                            <label for="formFile" class="form-label">Organization logo</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-
-                        <div class="mb-3">
+                        <div class="mb-3 w-100">
                             <label for="exampleInputEmail1" class="form-label">Organization Name</label>
                             <input type="text" class="form-control">
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Organization
-                                Description</label>
+
+                        <div class="mb-3 w-100">
+                            <label for="validationCustom03" class="form-label">Main Contact</label>
+                            <select class="form-select" id="validationCustom03" required>
+                                <option value="">Lucas Osherovsky</option>
+                                <option value="Dallas">Candela Gallego</option>
+                                <option value="Houston">Johnny Boy</option>
+                                <option value="Los Angeles">John Doe</option>
+                            </select>
+                            <div class="invalid-feedback">Please provide a Main Contact</div>
+                            <div class="valid-feedback">Looks good!</div>
+                        </div>
+
+                        <div class="mb-3 w-100">
+                            <label for="exampleFormControlTextarea1" class="form-label">About</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
-                        <fieldset disabled>
-
-                            <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label">Organization Admin</label>
-                                <input type="text" class="form-control" placeholder="Lucas Osherovsky"
-                                    id="disabledTextInput">
-                            </div>
-                        </fieldset>
-
 
                     </form>
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">
-
-                        <i class="card-icon" data-feather="x"></i>
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
 
                         Cancel
 
                     </button>
-                    <button type="button" class="btn btn-primary">
+                    <button type="button" class="btn btn-success">
 
-                        <i class="card-icon" data-feather="save"></i>
-                        Save Changes
+                        Create Organization
 
                     </button>
                 </div>
