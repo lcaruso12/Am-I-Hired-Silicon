@@ -1,5 +1,5 @@
 @import '_variables.scss';
-
+@import 'grid.scss';
 // user-variables.scss
 // Use this to override Bootstrap and Silicon variables
 //
@@ -7,8 +7,6 @@
 // Remove the "//" to comment it in and see it in action!
 
 $body-bg: $gray-50;
-
-
 $btn-link-color: $secondary ;
 
 /*Inputs*/
@@ -112,22 +110,23 @@ CUSTOM CSS
 }
 
 .organization-avatar{
+	flex-grow: 0;
+	flex-shrink: 0;
 	display: flex;
 	align-items: center;
 	padding: .5rem;
 	width: 112px;
 	height: 112px;
-	background: $white;
-	border: 1px solid $gray-100;
-	border-radius: 10px;
-}
-.card-avatar{
-	width: 4rem;
-	height: 4rem;
 	background: $gray-50;
 	border: 1px solid $gray-100;
-	border-radius: 6px;
+	border-radius: 10px;
+	&.--sm{
+	width: 4rem;
+	height: 4rem;
+	
+	}
 }
+
 
 .badge-icon{
 	width: .75rem;
@@ -143,8 +142,10 @@ CUSTOM CSS
 }
 
 .btn{
-
+line-height: 1em !important;
 	svg{
+		flex-shrink: 0;
+		flex-grow:0;
 		width: 1.5em;
 		height: 1.5em;
 	}
@@ -245,6 +246,13 @@ CUSTOM CSS
 	}
 	
 
+}
+.dropdown-item{
+	line-height: 1em !important;
+	padding: .75rem 1rem !important;
+	svg{
+		color: $gray-500;
+	}
 }
 
 .listing-header{
