@@ -289,26 +289,31 @@
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Organization
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Organization
                     </h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body ">
 
-                    <form class="d-flex flex-column justify-content-start align-items-center">
-                        <div class="organization-avatar m-0">
-                            <img src="img/itc-logo.svg" alt="IT Crowd">
-                        </div>
-                        <div class="mb-3 w-100">
-                            <label for="formFile" class="form-label">Organization logo</label>
+                    <form class="form">
+                        <div class="form-input">
+
+                            <div class="text-center mb-2">
+
+                                <div class="organization-avatar --xl mx-auto">
+                                    <img src="img/itc-logo.svg" alt="IT Crowd">
+                                </div>
+
+                            </div>
+                            <label for="formFile" class="form-label">Organization Logo</label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                        <div class="mb-3 w-100">
+                        <div class="w-100">
                             <label for="exampleInputEmail1" class="form-label">Organization Name</label>
                             <input type="text" class="form-control">
                         </div>
 
-                        <div class="mb-3 w-100">
+                        <div class="w-100">
                             <label for="validationCustom03" class="form-label">Main Contact</label>
                             <select class="form-select" id="validationCustom03" required>
                                 <option value="">Lucas Osherovsky</option>
@@ -320,7 +325,7 @@
                             <div class="valid-feedback">Looks good!</div>
                         </div>
 
-                        <div class="mb-3 w-100">
+                        <div class="w-100">
                             <label for="exampleFormControlTextarea1" class="form-label">About</label>
                             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                         </div>
@@ -334,9 +339,9 @@
                         Cancel
 
                     </button>
-                    <button type="button" class="btn btn-success">
+                    <button type="button" class="btn btn-primary">
 
-                        Create Organization
+                        Save Changes
 
                     </button>
                 </div>

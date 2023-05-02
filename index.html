@@ -258,11 +258,11 @@
 
             <!-- Row 2 | Body -->
 
-            <div class="row mt-4">
+            <div class="row mt-2">
 
                 <!-- Col 1 | Action Required -->
 
-                <div class="col-12 col-md-6 col-xl-4 mt-4">
+                <div class="col-12 col-md-6 col-xl-4 mt-3">
 
                     <div class="card d-flex gap-0">
 
@@ -272,7 +272,7 @@
 
                         </div>
 
-                        <div class="card-body p-0 d-flex flex-column gap-0" id="action-required">
+                        <div class="d-flex flex-column gap-3">
 
                             <p class="card-text m-0">These candidates haven't heard from you in a while. Send them
                                 a
@@ -283,167 +283,386 @@
                                 forget you.
                             </p>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
+                            <div class="d-flex flex-column gap-1 overflow-auto" style="max-height: 600px;">
 
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
+                                <div class="card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
 
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1 w-100">
 
-                                            <span class="dot bg-success"></span>
-                                            <span class="fs-sm text-muted">
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                                Last
-                                                Update
-                                                12hrs
-                                            </span>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
 
                                         </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
 
                                     </div>
 
-
                                 </div>
 
-                                <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
 
-                                <div class="dropdown-menu my-1">
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
 
-                                    <a href="#"
-                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                </div>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                            </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-warning"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                24hrs
-                                            </span>
+                                            </div>
 
                                         </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
 
                                     </div>
 
-
                                 </div>
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
 
-                                <div class="dropdown-menu my-1">
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                </div>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                            </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-warning"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                28hrs
-                                            </span>
+                                            </div>
 
                                         </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
 
                                     </div>
 
-
                                 </div>
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
 
-                                <div class="dropdown-menu my-1">
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                </div>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                            </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom shadow-none">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-danger"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                32hrs
-                                            </span>
+                                            </div>
 
                                         </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
 
                                     </div>
 
+                                </div>
+
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
+
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
+
+                                    </div>
 
                                 </div>
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
 
-                                <div class="dropdown-menu my-1">
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
+
+                                    </div>
 
                                 </div>
 
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
+
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
+
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
+
+                                    <div class="d-flex flex-row  gap-2 p-0">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-1">
+
+                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu my-1">
+
+                                        <a href="#"
+                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                            <i class="card-icon me-1" data-feather="message-square"></i>
+                                            Send Message
+                                        </a>
+
+                                    </div>
+
+                                </div>
                             </div>
-
 
                         </div>
 
@@ -452,7 +671,7 @@
 
                 <!-- Col 2 | Latest Jobs -->
 
-                <div class="col-12 col-md-6 col-xl-8 mt-4 ">
+                <div class="col-12 col-md-6 col-xl-8 mt-3">
                     <div class="d-flex flex-column gap-4">
 
                         <div class="listing-header">

@@ -45,6 +45,12 @@ $dropdown-link-hover-bg: $primary-50;
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
+/*Layout*/
+main{
+	padding: 1.5rem 0 2.5rem 0;
+}
+
+/*Header & Navbar*/
 .header{
 	max-height: 58px;
 	.navbody{
@@ -73,18 +79,37 @@ CUSTOM CSS
 		}
 	}
 }
-
 .mobile-nav-toggler {
 	
 	display: none;
 	justify-content: center;
 	align-items: center;
 }
+.offcanvas{
+	
+	.navbar-nav{
+		.nav-item{
+			
+			.nav-link{
+				padding: 0.5rem;
+				min-width: 300px;
+				&.active{
+					padding: 0.5rem;
+					background: rgba($primary, 0.12);
+					border-radius: .5rem;
+					color: $primary;
+					box-shadow: none;
+				}
+			}
+		}
+		
+	}
+}
 
+/*General Components*/
 .logo{
 	height: 1.5rem;
 }
-
 .dot {
 	height: .5rem;
 	width: .5rem;
@@ -92,11 +117,20 @@ CUSTOM CSS
 	border-radius: 50%;
 	display: inline-block;
 }
-
-main{
-	padding: 1.5rem 0 2.5rem 0;
+.list-group-item{
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-between !important;
+	padding: 1rem !important;
+	gap: .5rem;
+	border-radius: $border-radius !important;
+	small{
+		color: $gray-500;
+		font-weight: 400;
+	}
 }
 
+/*--Avatars*/
 .avatar {
 	width: 2rem;
 	height: 2rem;
@@ -129,7 +163,6 @@ main{
 		height: 4rem;
 	}
 }
-
 .organization-avatar{
 	flex-grow: 0;
 	flex-shrink: 0;
@@ -162,8 +195,7 @@ main{
 	}
 }
 
-
-
+/*--Buttons*/
 .btn{
 	line-height: 1em !important;
 	svg{
@@ -222,7 +254,7 @@ main{
 	
 }
 
-
+/*--Cards*/
 .card{
 	box-shadow: $box-shadow-sm !important;
 	padding: 1rem;
@@ -252,6 +284,8 @@ main{
 	}
 		
 }
+
+/*--Dropdowns*/
 .dropdown-item{
 	line-height: 1em !important;
 	padding: .75rem 1rem !important;
@@ -260,13 +294,13 @@ main{
 	}
 }
 
+/*--Forms & Inputs*/
 .form{
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
 	width: 100%;
 }
-
 .form-input{
 	display: flex;
 	flex-direction: column;
@@ -276,6 +310,7 @@ main{
 	}
 }
 
+/*--Listing & Details Layout*/
 .listing-header{
 	display: flex;
 	flex-direction: row;
@@ -291,7 +326,6 @@ main{
 		
 	}
 }
-
 .pipeline-steps{
 	min-width: 300px !important;
 	min-height: 500px;
@@ -302,6 +336,7 @@ main{
 	}
 }
 
+/*Messages Layout Chats*/
 .chat-list-header{
 	display: flex;
 	flex-direction: column;
@@ -346,10 +381,6 @@ main{
 			width: 100%;
 		}
 	}
-	.avatar {
-		width: 2.5rem;
-		height: 2.5rem;
-	}
 	&:hover{
 		background: rgba($primary-50, 0.5);
 	}
@@ -362,6 +393,7 @@ main{
 	}
 }
 
+/*Messages Layout Messages*/
 .messages-header{
 	width: 100%;
 	display: flex;
@@ -372,11 +404,6 @@ main{
 	padding: 1.25rem;
 	background: $white;
 	border-bottom: 1px solid $gray-100;
-	
-	.avatar{
-		width: 2.5rem !important;
-		height: 2.5rem !important;
-	}
 }
 .messages-body{
 	display: flex;
@@ -440,39 +467,7 @@ main{
 	z-index: 3;
 }
 
-.offcanvas{
-	
-	.navbar-nav{
-		.nav-item{
-			
-			.nav-link{
-				padding: 0.5rem;
-				min-width: 300px;
-				&.active{
-					padding: 0.5rem;
-					background: rgba($primary, 0.12);
-					border-radius: .5rem;
-					color: $primary;
-					box-shadow: none;
-				}
-			}
-		}
-		
-	}
-}
 
-.list-group-item{
-	display: flex !important;
-	flex-direction: row !important;
-	justify-content: space-between !important;
-	padding: 1rem !important;
-	gap: .5rem;
-	border-radius: $border-radius !important;
-	small{
-		color: $gray-500;
-		font-weight: 400;
-	}
-}
 
 /*=================================================================================================
 MEDIA QUERIES 

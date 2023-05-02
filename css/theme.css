@@ -471,6 +471,12 @@
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
+/*Layout*/
+main {
+  padding: 1.5rem 0 2.5rem 0;
+}
+
+/*Header & Navbar*/
 .header {
   max-height: 58px;
 }
@@ -500,6 +506,19 @@ CUSTOM CSS
   align-items: center;
 }
 
+.offcanvas .navbar-nav .nav-item .nav-link {
+  padding: 0.5rem;
+  min-width: 300px;
+}
+.offcanvas .navbar-nav .nav-item .nav-link.active {
+  padding: 0.5rem;
+  background: rgba(105, 125, 222, 0.12);
+  border-radius: 0.5rem;
+  color: #697DDE;
+  box-shadow: none;
+}
+
+/*General Components*/
 .logo {
   height: 1.5rem;
 }
@@ -511,10 +530,20 @@ CUSTOM CSS
   display: inline-block;
 }
 
-main {
-  padding: 1.5rem 0 2.5rem 0;
+.list-group-item {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  padding: 1rem !important;
+  gap: 0.5rem;
+  border-radius: 0.375rem !important;
+}
+.list-group-item small, .list-group-item .small {
+  color: #788391;
+  font-weight: 400;
 }
 
+/*--Avatars*/
 .avatar {
   width: 2rem;
   height: 2rem;
@@ -580,6 +609,7 @@ main {
   height: 7rem;
 }
 
+/*--Buttons*/
 .btn {
   line-height: 1em !important;
 }
@@ -631,6 +661,7 @@ main {
   color: #fff !important;
 }
 
+/*--Cards*/
 .card {
   box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(16, 22, 35, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(16, 22, 35, 0.03) !important;
   padding: 1rem;
@@ -660,6 +691,7 @@ main {
   flex-shrink: 0;
 }
 
+/*--Dropdowns*/
 .dropdown-item {
   line-height: 1em !important;
   padding: 0.75rem 1rem !important;
@@ -668,6 +700,7 @@ main {
   color: #788391;
 }
 
+/*--Forms & Inputs*/
 .form {
   display: flex;
   flex-direction: column;
@@ -684,6 +717,7 @@ main {
   margin: 0 !important;
 }
 
+/*--Listing & Details Layout*/
 .listing-header {
   display: flex;
   flex-direction: row;
@@ -707,6 +741,7 @@ main {
   max-height: 700px;
 }
 
+/*Messages Layout Chats*/
 .chat-list-header {
   display: flex;
   flex-direction: column;
@@ -751,10 +786,6 @@ main {
   align-items: center;
   width: 100%;
 }
-.chat-list-item .avatar {
-  width: 2.5rem;
-  height: 2.5rem;
-}
 .chat-list-item:hover {
   background: rgba(241, 243, 252, 0.5);
 }
@@ -766,6 +797,7 @@ main {
   margin: 0;
 }
 
+/*Messages Layout Messages*/
 .messages-header {
   width: 100%;
   display: flex;
@@ -776,10 +808,6 @@ main {
   padding: 1.25rem;
   background: #fff;
   border-bottom: 1px solid #E0E3E6;
-}
-.messages-header .avatar {
-  width: 2.5rem !important;
-  height: 2.5rem !important;
 }
 
 .messages-body {
@@ -841,31 +869,6 @@ main {
 .messages-input .btn-primary {
   border: none !important;
   background: #E0E4F8 !important;
-}
-
-.offcanvas .navbar-nav .nav-item .nav-link {
-  padding: 0.5rem;
-  min-width: 300px;
-}
-.offcanvas .navbar-nav .nav-item .nav-link.active {
-  padding: 0.5rem;
-  background: rgba(105, 125, 222, 0.12);
-  border-radius: 0.5rem;
-  color: #697DDE;
-  box-shadow: none;
-}
-
-.list-group-item {
-  display: flex !important;
-  flex-direction: row !important;
-  justify-content: space-between !important;
-  padding: 1rem !important;
-  gap: 0.5rem;
-  border-radius: 0.375rem !important;
-}
-.list-group-item small, .list-group-item .small {
-  color: #788391;
-  font-weight: 400;
 }
 
 /*=================================================================================================
