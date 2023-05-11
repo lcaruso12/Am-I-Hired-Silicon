@@ -283,17 +283,17 @@
                                 forget you.
                             </p>
 
-                            <div class="d-flex flex-column gap-1 overflow-auto" style="max-height: 600px;">
+                            <div class="d-flex flex-column gap-1 overflow-auto" style="max-height: 500px;">
 
-                                <div class="card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
+                                <div class="card candidate">
 
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1 w-100">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -315,27 +315,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -357,27 +365,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -399,27 +415,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -441,27 +465,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -483,27 +515,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -525,27 +565,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -567,27 +615,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -609,27 +665,35 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <div class=" card py-2 px-0 border-0 rounded-0 border-bottom shadow-none">
-
-                                    <div class="d-flex flex-row  gap-2 p-0">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
                                         <div class="avatar --lg">
                                             <p>JD</p>
                                         </div>
-                                        <div class="d-flex flex-column gap-1">
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <h5 class="card-title text-start m-0">John Doe</h5>
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
                                             <span class="fs-sm text-muted">johndoe@gmail.com</span>
                                             <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
@@ -651,17 +715,128 @@
                                         <i data-feather="more-vertical"></i>
                                     </button>
 
-                                    <div class="dropdown-menu my-1">
-
-                                        <a href="#"
-                                            class="dropdown-item d-flex flex-row align-items-center justify-content-start">
-                                            <i class="card-icon me-1" data-feather="message-square"></i>
-                                            Send Message
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
                                         </a>
 
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
                                     </div>
 
                                 </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+
+
                             </div>
 
                         </div>
@@ -674,32 +849,25 @@
                 <div class="col-12 col-md-6 col-xl-8 mt-3">
                     <div class="d-flex flex-column gap-4">
 
-                        <div class="listing-header">
+                        <div class="listing-header pt-2">
 
                             <h4 class="m-0 w-100">Latest Jobs</h4>
 
-                            <div class="searchbar">
+                            <button class="btn faded-primary" type="button">
+                                View All
+                            </button>
 
-                                <input class="form-control" id="input-normal" type="text" placeholder="Search...">
-
-                                <button class="btn faded-primary" type="button">
-                                    <i class="card-icon" data-feather="search"></i>
-                                </button>
-                            </div>
 
                         </div>
 
                         <div class="card-body p-0 d-flex flex-column gap-3">
 
                             <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                                <div class="card-header p-0 border-0 w-100">
+                                <div class="d-flex flex-row gap-1">
 
-                                    <div class="card-title m-0 ">
-                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+                                    <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
-                                    </div>
-
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
 
                                 </div>
 
@@ -751,14 +919,11 @@
                             </div>
 
                             <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                                <div class="card-header p-0 border-0 w-100">
+                                <div class="d-flex flex-row gap-1">
 
-                                    <div class="card-title m-0 ">
-                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+                                    <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
-                                    </div>
-
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
 
                                 </div>
 
@@ -810,14 +975,11 @@
                             </div>
 
                             <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                                <div class="card-header p-0 border-0 w-100">
+                                <div class="d-flex flex-row gap-1">
 
-                                    <div class="card-title m-0 ">
-                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+                                    <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
-                                    </div>
-
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
 
                                 </div>
 
@@ -869,14 +1031,11 @@
                             </div>
 
                             <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                                <div class="card-header p-0 border-0 w-100">
+                                <div class="d-flex flex-row gap-1">
 
-                                    <div class="card-title m-0 ">
-                                        <h5 class="m-0">Ssr UX UI Designer</h5>
+                                    <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                        <span class="badge bg-faded-success text-success rounded-pill">Active</span>
-                                    </div>
-
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
 
                                 </div>
 

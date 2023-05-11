@@ -41,7 +41,8 @@ $list-group-active-box-shadow: none;
 /*Dropdown Items*/
 $dropdown-link-hover-bg: $primary-50;
 
-
+/*Headings Colors*/
+$headings-color: $gray-700;
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
@@ -222,7 +223,7 @@ main{
 	&.faded-primary{
 		border: transparent;
 		background:rgba($primary, 0.16);
-		color: $primary;
+		color: $primary-500;
 		&:hover{
 			background: $primary !important;
 			color: $white !important;
@@ -239,6 +240,16 @@ main{
 		}
 		
 	}
+	&.faded-success{
+		border: transparent;
+		background:rgba($success, 0.20);
+		color: #197A3D;
+		&:hover{
+			background: $success !important;
+			color: $white !important;
+		}
+		
+	}
 	&.faded-danger{
 		border: transparent;
 		background:rgba($danger, 0.16);
@@ -249,9 +260,37 @@ main{
 		}
 		
 	}	
+	&.btn-link{
+		background: none;
+		color: $gray-600;
+		
+	}
 	
 	
 	
+}
+
+/*--Badge*/
+.badge{
+	line-height: $line-height-none;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	&.bg-gray{
+		background: $gray-500;
+	}
+	&.bg-faded-gray{
+		background: rgba($gray-800, 0.15);
+	}
+	&.outline-primary{
+		border: solid 1px $primary;
+	}
+	&.outline-gray{
+		border: solid 1px $gray-500;
+	}
+	&.outline-success{
+		border: solid 1px $success;
+	}
 }
 
 /*--Cards*/
@@ -270,9 +309,29 @@ main{
 			margin:0;
 		}
 	}
+	&.candidate{
+		padding: .5rem;
+		display:flex;
+		align-items: center;
+		gap: .75rem;
+		box-shadow: none !important;
+		.btn-menu{
+			background: none;
+			border: none;
+			position: absolute;
+			top: .5rem;
+			right: .5rem;
+			visibility: hidden;
+		}
+		&:hover{
+			background: $primary-50;
+			.btn-menu{
+				visibility: visible;
+			}
+		}
+	}
 	&.--selected{
-		background:$primary-50;
-		box-shadow: $box-shadow-sm, inset 0 0 0 1px $primary !important;
+		box-shadow: $box-shadow-sm, inset 0 0 0 2px $primary !important;
 	}
 	&.--outline{
 		box-shadow: inset 0 0 0 1px $gray-200 !important;
@@ -287,9 +346,13 @@ main{
 
 /*--Dropdowns*/
 .dropdown-item{
+	width: 240px !important;
 	line-height: 1em !important;
 	padding: .75rem 1rem !important;
 	svg{
+		flex-shrink: 0;
+		width: 1.25rem;
+		height: 1.25rem;
 		color: $gray-500;
 	}
 }
@@ -316,25 +379,54 @@ main{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	gap:3rem;
+	gap:1.5rem;
+	.title{
+		flex-shrink: 0;
+		margin: 0;
+		width: 306px;
+		text-align: start;
+	}
 	.searchbar{
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		gap: .5rem;
-		
+		gap: 1.5rem;
 	}
 }
 .pipeline-steps{
 	min-width: 300px !important;
 	min-height: 500px;
+	padding: 1rem;
 	.card-body{
 		
 		max-height: 700px;
 		
 	}
 }
+
+/*--Modal components*/
+.modal-list-item{
+	
+	border-radius: $border-radius-sm;
+	display: flex;
+	align-items: center;
+	padding: .75rem;
+	gap: 1.25rem;
+	.actions{
+		visibility: hidden;
+		display: flex;
+		gap: .5rem;
+	}
+	
+	&:hover{
+	background:$primary-50;
+	.actions{
+		visibility: visible;
+	}
+	}
+}
+
 
 /*Messages Layout Chats*/
 .chat-list-header{

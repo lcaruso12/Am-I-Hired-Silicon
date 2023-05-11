@@ -468,6 +468,7 @@
 /*Pagination*/
 /*List Items*/
 /*Dropdown Items*/
+/*Headings Colors*/
 /*=================================================================================================
 CUSTOM CSS
 =================================================================================================*/
@@ -636,7 +637,7 @@ main {
 .btn.faded-primary {
   border: transparent;
   background: rgba(105, 125, 222, 0.16);
-  color: #697DDE;
+  color: #5663D7;
 }
 .btn.faded-primary:hover {
   background: #697DDE !important;
@@ -651,6 +652,15 @@ main {
   background: #B6BDC3 !important;
   color: #313949 !important;
 }
+.btn.faded-success {
+  border: transparent;
+  background: rgba(34, 197, 94, 0.2);
+  color: #197A3D;
+}
+.btn.faded-success:hover {
+  background: #22c55e !important;
+  color: #fff !important;
+}
 .btn.faded-danger {
   border: transparent;
   background: rgba(240, 41, 68, 0.16);
@@ -659,6 +669,33 @@ main {
 .btn.faded-danger:hover {
   background: #f02944 !important;
   color: #fff !important;
+}
+.btn.btn-link {
+  background: none;
+  color: #4E5A6A;
+}
+
+/*--Badge*/
+.badge {
+  line-height: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.badge.bg-gray {
+  background: #788391;
+}
+.badge.bg-faded-gray {
+  background: rgba(19, 30, 51, 0.15);
+}
+.badge.outline-primary {
+  border: solid 1px #697DDE;
+}
+.badge.outline-gray {
+  border: solid 1px #788391;
+}
+.badge.outline-success {
+  border: solid 1px #22c55e;
 }
 
 /*--Cards*/
@@ -678,9 +715,29 @@ main {
 .card .card-header * {
   margin: 0;
 }
-.card.--selected {
+.card.candidate {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  box-shadow: none !important;
+}
+.card.candidate .btn-menu {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  visibility: hidden;
+}
+.card.candidate:hover {
   background: #F1F3FC;
-  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(16, 22, 35, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(16, 22, 35, 0.03), inset 0 0 0 1px #697DDE !important;
+}
+.card.candidate:hover .btn-menu {
+  visibility: visible;
+}
+.card.--selected {
+  box-shadow: 0 0.275rem 0.75rem -0.0625rem rgba(16, 22, 35, 0.06), 0 0.125rem 0.4rem -0.0625rem rgba(16, 22, 35, 0.03), inset 0 0 0 2px #697DDE !important;
 }
 .card.--outline {
   box-shadow: inset 0 0 0 1px #CFD3D8 !important;
@@ -693,10 +750,14 @@ main {
 
 /*--Dropdowns*/
 .dropdown-item {
+  width: 240px !important;
   line-height: 1em !important;
   padding: 0.75rem 1rem !important;
 }
 .dropdown-item svg {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
   color: #788391;
 }
 
@@ -723,22 +784,49 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 3rem;
+  gap: 1.5rem;
+}
+.listing-header .title {
+  flex-shrink: 0;
+  margin: 0;
+  width: 306px;
+  text-align: start;
 }
 .listing-header .searchbar {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
 }
 
 .pipeline-steps {
   min-width: 300px !important;
   min-height: 500px;
+  padding: 1rem;
 }
 .pipeline-steps .card-body {
   max-height: 700px;
+}
+
+/*--Modal components*/
+.modal-list-item {
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  gap: 1.25rem;
+}
+.modal-list-item .actions {
+  visibility: hidden;
+  display: flex;
+  gap: 0.5rem;
+}
+.modal-list-item:hover {
+  background: #F1F3FC;
+}
+.modal-list-item:hover .actions {
+  visibility: visible;
 }
 
 /*Messages Layout Chats*/
@@ -999,7 +1087,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-bottom: 1rem;
   font-weight: 800;
   line-height: 1.3;
-  color: var(--si-gray-900);
+  color: #313949;
 }
 
 h1, .h1 {
@@ -6078,7 +6166,7 @@ textarea.form-control-lg {
   --si-popover-header-padding-x: 1rem;
   --si-popover-header-padding-y: 0.75rem;
   --si-popover-header-font-size: 1rem;
-  --si-popover-header-color: var(--si-gray-900);
+  --si-popover-header-color: #313949;
   --si-popover-header-bg: transparent;
   --si-popover-body-padding-x: 1rem;
   --si-popover-body-padding-y: 1rem;
@@ -16419,7 +16507,7 @@ img-comparison-slider:focus {
 }
 .dark-mode .bg-white {
   --si-body-color: #313949;
-  --si-heading-color: var(--si-gray-900);
+  --si-heading-color: #313949;
   --si-nav-link-color: #131E33;
   --si-border-color: #CFD3D8;
 }
