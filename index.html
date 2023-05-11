@@ -35,79 +35,125 @@
     <!-- Header-->
     <header class="header bg-light shadow-sm sticky-top">
 
-        <div class="container">
+        <div class="container d-flex justify-content-between align-items-center gap-4">
 
-            <div class="d-flex justify-content-between align-items-center py-1">
-                <!-- Responsive nav-->
-                <div class="mobile-nav-toggler d-md-none">
-                    <nav class="row navbar navbar-expand-lg align-items-center p-0">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i data-feather="menu"></i> </span>
-                        </button>
-                    </nav>
-                </div>
+            <!-- Responsive nav-->
+            <div class="mobile-nav-toggler d-lg-none d-flex justify-content-center align-items-center"
+                style="min-width: 2.5rem;">
+                <nav class="row navbar navbar-expand-lg align-items-center p-0">
 
-                <a href="index.html">
-                    <img src="img/itc-logo.svg" alt="IT Crowd" style="height: 1rem;">
-                </a>
+                    <button class="btn btn-light btn-icon " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasLeft">
+                        <i data-feather="menu"></i> </span>
 
-                <div class="nav dropdown d-block order-lg-3 ms-4">
+                    </button>
+                </nav>
+            </div>
 
-                    <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="index.html">
+                <img class="logo" src="img/itc-logo.svg" alt="IT Crowd">
+            </a>
 
-                        <div class="avatar">
-                            <p>LO</p>
-                        </div>
+            <nav class="row navbar navbar-expand-lg w-100">
 
-                        <div class="d-none d-sm-block ps-2">
-                            <div class="fs-xs lh-1 opacity-60">Hello,</div>
-                            <div class="fs-sm dropdown toggle">Lucas
+                <div class="navbody collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
 
-                                <i data-feather="chevron-down"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                    <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
-                        <li>
-                            <a href="#" class="dropdown-item d-flex align-items-center">
-                                <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
-                                Profile
-
+                            <a class="nav-link active" aria-current="page" href="index.html">
+                                <i class="" data-feather="home"></i>
+                                Home
                             </a>
                         </li>
-                        <li>
-                            <a href="sign-up.html" class="dropdown-item d-flex align-items-center">
-                                <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
-                                Log Out
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="jobs.html">
+                                <i class="" data-feather="briefcase"></i>
+                                Jobs
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="messages.html">
+                                <i class="" data-feather="message-square"></i>
+                                Messages
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="my-organization.html">
+                                <i class="" data-feather="book"></i>
+                                My Organization
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="users.html">
+                                <i class="" data-feather="users"></i>
+                                Users
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link" href="template-messages.html">
+                                <i class="" data-feather="file-text"></i>
+                                Templates
+                            </a>
+                        </li>
                     </ul>
                 </div>
+            </nav>
 
+            <div class="nav dropdown d-block order-lg-3">
+
+                <a href="#" class="d-flex nav-link p-0" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <div class="avatar">
+                        <p>LO</p>
+                    </div>
+
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end my-1" style="width: 14rem;">
+                    <li>
+                        <a href="#" class="dropdown-item d-flex align-items-center">
+                            <i class="bx bx-shopping-bag fs-base opacity-60 me-2"></i>
+                            Profile
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sign-up.html" class="dropdown-item d-flex align-items-center">
+                            <i class="bx bx-dollar fs-base opacity-60 me-2"></i>
+                            Log Out
+
+                        </a>
+                    </li>
+
+                </ul>
             </div>
+
+
 
         </div>
 
 
-        <div class="mobile-nav-menu">
-            <div class="navBody collapse navbar-collapse px-5" id="navbarNav">
-                <ul class="navbar-nav">
+        <div class="offcanvas offcanvas-start" id="offcanvasLeft" tabindex="-1">
+            <div class="offcanvas-header border-bottom">
+                <a href="index.html">
+                    <img src="img/itc-logo.svg" alt="IT Crowd" style="height: 1.25rem;">
+                </a>
+                <button class="btn-close" type="button" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body p-3">
+                <ul class="navbar-nav d-flex flex-column justify-content-start gap-2">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="jobs.html">Jobs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="messages.html">Messages</a>
+                        <a class="nav-link" href="messages-mobile.html">Messages</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="my-organization.html">My Organization</a>
+                        <a class="nav-link" aria-current="page" href="my-organization.html">My Organization</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="users.html">Users</a>
@@ -120,39 +166,8 @@
             </div>
         </div>
 
-        <div class="navigation border-top">
-            <div class="container">
-                <nav class="row navbar navbar-expand-lg align-items-center ">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <i data-feather="menu"></i> </span>
-                    </button>
-                    <div class="navBody collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="jobs.html">Jobs</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="messages.html">Messages</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="my-organization.html">My Organization</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="users.html">Users</a>
-                            </li>
 
-                            <li class="nav-item">
-                                <a class="nav-link" href="template-messages.html">Templates</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div>
+
 
     </header>
 
@@ -160,20 +175,17 @@
 
     <main class="home">
 
-        <div class="container px-0 py-4">
-
-
+        <div class="container">
 
             <!-- Row 1 | Overview -->
 
-            <div class="row gy-3 gx-3">
+            <div class="row">
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="briefcase"></i>
+                        <i class="text-primary" data-feather="briefcase" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">27</h5>
@@ -189,10 +201,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="check-circle"></i>
+                        <i class="text-primary" data-feather="check-circle" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">17</h5>
@@ -208,10 +219,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row  gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row  gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="thumbs-up"></i>
+                        <i class="text-primary" data-feather="thumbs-up" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">6</h5>
@@ -227,10 +237,9 @@
 
                 <div class="col-12 col-md-6 col-lg-3">
 
-                    <div
-                        class="card shadow-sm border-0 p-3 d-flex flex-row gap-3 justify-content-center align-items-center">
+                    <div class="card shadow-sm d-flex flex-row gap-3 justify-content-center align-items-center">
 
-                        <i class="overview-icon" data-feather="users"></i>
+                        <i class="text-primary" data-feather="users" style="width: 2.5rem; height: 2.5rem;"></i>
 
                         <div class="card-body p-0">
                             <h3 class="m-0">125</h5>
@@ -249,23 +258,24 @@
 
             <!-- Row 2 | Body -->
 
-            <div class="row gy-3 gy-xl-3  p-0 pt-3">
+            <div class="row mt-2">
 
                 <!-- Col 1 | Action Required -->
 
-                <div class="col-12 col-xl-4">
+                <div class="col-12 col-md-6 col-xl-4 mt-3">
 
-                    <div class="card shadow-sm border-0 p-3 d-flex ">
+                    <div class="card d-flex gap-0">
 
-                        <div class="card-header p-0 border-0 d-flex align-items-center justify-content-between w-100">
+                        <div class="card-header">
 
-                            <h5 class=" m-0 text-uppercase fs-6">Action Required</h5>
+                            <h5>Action Required</h5>
 
                         </div>
 
-                        <div class="card-body p-0 d-flex flex-column gap-1">
+                        <div class="d-flex flex-column gap-3">
 
-                            <p class="card-text m-0">These candidates haven't heard from you in a while. Send them a
+                            <p class="card-text m-0">These candidates haven't heard from you in a while. Send them
+                                a
                                 quick
                                 note to make sure
                                 they
@@ -273,166 +283,561 @@
                                 forget you.
                             </p>
 
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom">
+                            <div class="d-flex flex-column gap-1 overflow-auto" style="max-height: 500px;">
 
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
+                                <div class="card candidate">
 
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                            <span class="dot bg-primary"></span>
-                                            <span class="fs-sm text-muted">
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                                Last
-                                                Update
-                                                12hrs
-                                            </span>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
 
                                         </div>
-
                                     </div>
 
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                <div class="dropdown-menu my-1">
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                                </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            </div>
-
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-warning"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                24hrs
-                                            </span>
+                                            </div>
 
                                         </div>
-
                                     </div>
 
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                <div class="dropdown-menu my-1">
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                                </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            </div>
-
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-warning"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                28hrs
-                                            </span>
+                                            </div>
 
                                         </div>
-
                                     </div>
 
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
 
                                 </div>
+                                <div class="card candidate">
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
 
-                                <div class="dropdown-menu my-1">
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
 
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
 
-                                </div>
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
 
-                            </div>
-
-                            <div class=" card p-0 py-3 border-0 rounded-0 border-bottom">
-
-                                <div class="card-body d-flex  flex-column gap-0 p-0">
-                                    <div class="d-flex flex-column gap-0">
-
-                                        <h5 class="card-title text-start m-0">John Doe</h5>
-                                        <span class="fs-sm text-muted">johndoe@gmail.com</span>
-                                        <div class="d-flex flex-row justify-content-start align-items-center gap-1">
-
-                                            <span class="dot bg-danger"></span>
-                                            <span class="fs-sm text-muted">
-
-                                                Last
-                                                Update
-                                                32hrs
-                                            </span>
+                                            </div>
 
                                         </div>
-
                                     </div>
 
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div class="card candidate">
+
+                                    <div class="d-flex flex-row align-items-center gap-2 p-0 w-100">
+                                        <div class="avatar --lg">
+                                            <p>JD</p>
+                                        </div>
+                                        <div class="d-flex flex-column gap-0 w-100">
+
+                                            <h6 class="card-title text-start m-0">John Doe</h6>
+                                            <span class="fs-sm text-muted">johndoe@gmail.com</span>
+                                            <div class="d-flex flex-row justify-content-start align-items-center gap-1">
+
+                                                <span class="dot bg-success"></span>
+                                                <span class="fs-sm text-muted">
+
+                                                    Last
+                                                    Update
+                                                    12hrs
+                                                </span>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <button type="button" class="btn btn-menu btn-light btn-icon btn-sm"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i data-feather="more-vertical"></i>
+                                    </button>
+
+                                    <div class="dropdown-menu  my-1">
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2"
+                                            data-bs-toggle="modal" data-bs-target="#edit-candidate-modal">
+                                            <i data-feather="edit-2"></i>
+                                            Edit
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2">
+                                            <i data-feather="message-square"></i>
+                                            Send message
+                                        </a>
+
+                                        <a href="#" class="dropdown-item d-flex flex-row align-items-center gap-2
+                                        text-danger" data-bs-toggle="modal" data-bs-target="#deletecandidate-modal">
+                                            <i data-feather="trash-2" class="text-danger"></i>
+                                            Delete
+                                        </a>
+                                    </div>
 
                                 </div>
 
-                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i data-feather="more-vertical"></i>
-                                </button>
-
-                                <div class="dropdown-menu my-1">
-
-                                    <a href="#" class="dropdown-item">
-                                        <i class="card-icon me-1" data-feather="message-square"></i>
-                                        Send Message
-                                    </a>
-
-                                </div>
 
                             </div>
-
 
                         </div>
 
@@ -441,242 +846,248 @@
 
                 <!-- Col 2 | Latest Jobs -->
 
-                <div class="col-12 col-xl-8 ">
+                <div class="col-12 col-md-6 col-xl-8 mt-3">
+                    <div class="d-flex flex-column gap-4">
 
-                    <div class="p-0 border-0 d-flex align-items-center justify-content-between w-100 my-3">
-                        <h5 class="m-0 text-uppercase fs-6">Latest Jobs</h5>
-                        <button type="button" class="btn btn-link btn-sm">
-                            <a href="jobs.html" class="text-decoration-none"> View All</a>
-                        </button>
-                    </div>
+                        <div class="listing-header pt-2">
 
-                    <div class="card-body p-0 d-flex flex-column gap-3">
+                            <h4 class="m-0 w-100">Latest Jobs</h4>
 
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
-
-                                <div class="card-title m-0 ">
-                                    <h5 class="m-0">Ssr UX UI Designer</h5>
-
-                                    <span class="badge bg-faded-primary text-primary rounded-pill">Active</span>
-                                </div>
-
-
-                            </div>
-
-                            <div class="card-body p-0">
-
-                                <ul class="list-group list-group-flush d-flex flex-row gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
+                            <button class="btn faded-primary" type="button">
+                                View All
                             </button>
 
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
-                            </div>
 
                         </div>
 
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
+                        <div class="card-body p-0 d-flex flex-column gap-3">
 
-                                <div class="card-title m-0 ">
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="d-flex flex-row gap-1">
+
                                     <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                    <span class="badge bg-faded-primary text-primary rounded-pill">Active</span>
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
+
                                 </div>
 
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <div class="card-body p-0">
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="d-flex flex-row gap-1">
 
-                                <ul class="list-group list-group-flush d-flex flex-row gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
-
-                                <div class="card-title m-0 ">
                                     <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                    <span class="badge bg-faded-primary text-primary rounded-pill">Active</span>
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
+
                                 </div>
 
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <div class="card-body p-0">
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="d-flex flex-row gap-1">
 
-                                <ul class="list-group list-group-flush d-flex flex-row gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
-
-                            </div>
-
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
-                            </div>
-
-                        </div>
-
-                        <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
-                            <div class="card-header p-0 border-0 w-100">
-
-                                <div class="card-title m-0 ">
                                     <h5 class="m-0">Ssr UX UI Designer</h5>
 
-                                    <span class="badge bg-faded-primary text-primary rounded-pill">Active</span>
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
+
                                 </div>
 
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <div class="card-body p-0">
+                            <div class="card d-flex p-3 gap-2 border-0 shadow-sm">
+                                <div class="d-flex flex-row gap-1">
 
-                                <ul class="list-group list-group-flush d-flex flex-row gap-3">
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="users"></i>
-                                        25 candidates
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="calendar"></i>
-                                        Created at: dd/mm/yyyy
-                                    </li>
-                                    <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
-                                        <i class="card-icon" data-feather="award"></i>
-                                        Recruiter: Lucas Osherovsky
-                                    </li>
-                                </ul>
+                                    <h5 class="m-0">Ssr UX UI Designer</h5>
+
+                                    <span class="badge bg-success text-white rounded-pill">Active</span>
+
+                                </div>
+
+                                <div class="card-body p-0">
+
+                                    <ul class="list-group list-group-flush d-flex flex-row flex-wrap gap-3">
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="users"></i>
+                                            25 candidates
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="calendar"></i>
+                                            Created at: dd/mm/yyyy
+                                        </li>
+                                        <li class="list-group-item p-0 d-flex align-items-center gap-2 border-0 fs-sm">
+                                            <i class="card-icon" data-feather="award"></i>
+                                            Recruiter: Lucas Osherovsky
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+                                <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="" data-feather="more-vertical"></i>
+                                </button>
+
+                                <div class="dropdown-menu my-1">
+
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="book-open"></i>
+                                        Job Description
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1" data-feather="edit-2"></i>
+                                        Edit
+                                    </a>
+                                    <a href="#"
+                                        class="dropdown-item d-flex flex-row align-items-center justify-content-start">
+                                        <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
+                                        <span class="text-danger">Delete</span>
+                                    </a>
+
+
+                                </div>
 
                             </div>
 
-                            <button type="button" class="btn btn-light btn-icon btn-sm btn-menu"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="" data-feather="more-vertical"></i>
-                            </button>
-
-                            <div class="dropdown-menu my-1">
-
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="book-open"></i>
-                                    Job Description
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1" data-feather="edit-2"></i>
-                                    Edit
-                                </a>
-                                <a href="#" class="dropdown-item">
-                                    <i class="card-icon me-1 text-danger" data-feather="trash-2"></i>
-                                    <span class="text-danger">Delete</span>
-                                </a>
-
-
-                            </div>
 
                         </div>
-
-
                     </div>
 
 
